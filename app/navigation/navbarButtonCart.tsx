@@ -1,0 +1,39 @@
+"use client"
+import { useRouter } from "next/navigation"
+import { memo, useState } from "react"
+import useCartCount from "../items/cart/useCartCount"
+
+const ButtonCart = () => {
+    const { cartCount } = useCartCount()
+    const [color, setColor] = useState("")
+    const router = useRouter()
+
+    const cartLogo = `url(${require("../assets/images/cart.png")})`
+    const goToCart = () => {
+        if (cartCount !== 0) {
+            router.push("/items/cart")
+        } else null
+    }
+
+    return (
+        <div
+            style={
+                cartCount === 0
+                    ? { color: "#2aa" }
+                    : {
+                          color: `${color}`,
+                          backgroundImage: cartLogo,
+                          cursor: "pointer",
+                      }
+            }
+            onMouseEnter={() => setColor("#fff")}
+            onMouseLeave={() => setColor("#2aa")}
+            onMouseUp={goToCart}
+            className="mB"
+        >
+            {cartCount !== 0 ? cartCount : "Welcome!"}
+        </div>
+    )
+}
+
+export default memo(ButtonCart)

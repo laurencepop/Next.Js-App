@@ -1,0 +1,22 @@
+[
+    {
+        "name": "User Account",
+        "description": "create your own user account and sign in",
+        "path": "user/signin"
+    },
+    {
+        "name": "New Item",
+        "description": "add your own items the Items after creating an account",
+        "path": "items/new"
+    },
+    {
+        "name": "User Items",
+        "description": "view you own Items items and edit their attributes",
+        "path": "items/user"
+    },
+    {
+        "name": "Items",
+        "description": "shopping card including various options",
+        "path": "items/items"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "name",
+        "type": "text",
+        "plh": "please type your name..."
+    },
+    {
+        "name": "email",
+        "type": "email",
+        "plh": "please type your email..."
+    },
+    {
+        "name": "email2",
+        "type": "email",
+        "plh": "please re-type your email..."
+    },
+    {
+        "name": "password",
+        "type": "text",
+        "plh": "please type your password..."
+    },
+    {
+        "name": "password2",
+        "type": "text",
+        "plh": "please re-type your password..."
+    }
+]
