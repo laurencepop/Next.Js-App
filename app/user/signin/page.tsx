@@ -1,17 +1,17 @@
 "use client"
+import { useRouter } from 'next/router'
 import { memo } from "react"
-// import useUserCheck from "../userCheck"
+import useUserCheck from "../userCheck"
 import SignInButtons from "./signInButtons"
 import SignInInputs from "./signInInputs"
 import useSignIn from "./useSignIn"
 
 const SignIn = () => {
-    // useUserCheck()
-
-    // const { query } = useRouter()
+    useUserCheck()
+    const router = useRouter()
     const { values, setOnChange, submit, error, loading } = useSignIn()
 
-    // console.log(`XXX: ${query}`)
+    console.log(`XXX: ${router.query}`)
 
     return (
         <>
@@ -33,5 +33,4 @@ const SignIn = () => {
         </>
     )
 }
-
 export default memo(SignIn)

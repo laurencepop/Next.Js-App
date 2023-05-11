@@ -1,5 +1,4 @@
 "use client"
-import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { useApiUrl } from "../../hooks/useApiUrl"
 import useFetch from "../../hooks/useFetch"
@@ -15,22 +14,13 @@ export default function useUserItems() {
     )
     const { user } = UserContext()
     const [items, setItems] = useState<i_dbItem[]>(data || [])
-    const router = useRouter()
 
     useEffect(() => {
-        if (user) {
+        user &&
             data &&
-                setItems(
-                    data.filter((item: i_dbItem) =>
-                        item.userID?.includes(user._id)
-                    )
-                )
-        } else {
-            router.replace({
-                pathname: "/user/signin",
-                query: "please sign in",
-            })
-        }
+            setItems(
+                data.filter((item: i_dbItem) => item.userID?.includes(user._id))
+            )
     }, [data, user])
 
     return { wait, err, items }

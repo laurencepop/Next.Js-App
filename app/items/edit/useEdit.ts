@@ -10,11 +10,11 @@
 
 // export default function useEdit() {
 //     useUserCheck()
-//     const router = useRouter()
+// 	const { query } = useRouter()
 //     const { transfer, error, loading, info } = useFetcher()
 
 //     const [values, setValues] = useState<i_Item>({
-//         name: JSON.parse(router.query.name),
+//         name: JSON.parse(query.name),
 //         image: query.image,
 //         price: query.price,
 //         description: query.description,

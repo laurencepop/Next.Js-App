@@ -1,7 +1,7 @@
 "use client"
 
 import { memo } from "react"
-import useUserCheck from "../../user/userCheck"
+import useUserCheck from "../userCheck"
 import SignUpForm from "./signUpForm"
 import useSignUp from "./useSignUp"
 

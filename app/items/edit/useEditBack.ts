@@ -11,7 +11,7 @@ export default function useEditBack() {
             router.back()
         } else {
             router.push({
-                pathname: "/Items/user",
+                pathname: "/items/user",
                 query: {
                     position: position,
                 },

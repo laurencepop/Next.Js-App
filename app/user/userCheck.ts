@@ -12,7 +12,7 @@ export default function useUserCheck() {
     const isObject = useObject<i_User | null>(user)
 
     useEffect(() => {
-        !isObject && router.replace("/")
+        isObject && router.replace("/")
     }, [isObject])
 
     return null

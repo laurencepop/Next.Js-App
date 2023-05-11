@@ -1,12 +1,14 @@
 "use client"
 import { memo } from "react"
 import useObject from "../../hooks/useObject"
-import { i_dbItem } from "../../items/interfaces"
+import { i_dbItem } from "../interfaces"
 import ItemsUserMap from "./itemsUserMap"
 import useUserItems from "./useItemsUser"
 import useItemsUserScroll from "./useItemsUserScroll"
+import useUserCheck from "../userCheck"
 
 const ItemsUser = () => {
+    useUserCheck()
     const { wait, err, items } = useUserItems()
     const isObject = useObject<i_dbItem[]>(items)
     useItemsUserScroll()

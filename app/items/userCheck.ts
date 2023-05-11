@@ -2,19 +2,22 @@
 
 import { useRouter } from "next/router"
 import { useEffect } from "react"
+import useObject from "../hooks/useObject"
+import { i_User } from "../user/interfaces"
 import { UserContext } from "../user/userContext"
 
 export default function useUserCheck() {
     const { user } = UserContext()
     const router = useRouter()
+    const isObject = useObject<i_User | null>(user)
 
     useEffect(() => {
-        !user &&
+        !isObject &&
             router.push({
                 pathname: "/user/signin",
                 query: "please sign in",
             })
     }, [user])
 
-    return null
+    return
 }
