@@ -1,5 +1,5 @@
 "use client"
-import { useRouter } from 'next/router'
+// import { useRouter } from "next/router"
 import { memo } from "react"
 import useUserCheck from "../userCheck"
 import SignInButtons from "./signInButtons"
@@ -8,15 +8,15 @@ import useSignIn from "./useSignIn"
 
 const SignIn = () => {
     useUserCheck()
-    const router = useRouter()
+    // const router = useRouter()
     const { values, setOnChange, submit, error, loading } = useSignIn()
 
-    console.log(`XXX: ${router.query}`)
+    // console.log(`XXX: ${JSON.stringify(router)}`)
 
     return (
         <>
             <form className="l c" onSubmit={submit}>
-                {/* <b className="c f">{query ? query : "SignIn"}</b> */}
+                {/* <b className="c f">{router ? router : "SignIn"}</b> */}
                 <SignInInputs {...{ values, setOnChange }} />
                 <br />
                 {loading ? (

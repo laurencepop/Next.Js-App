@@ -1,6 +1,6 @@
 "use client"
 import { memo, useEffect } from "react"
-import ItemInputs from "../../items/itemInputs"
+import ItemInputs from "../itemInputs"
 import EditButtons from "./editButtons"
 import useEdit from "./useEdit"
 

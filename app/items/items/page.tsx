@@ -27,8 +27,7 @@ const Items = () => {
             <ItemsMap {...{ items }} />
         </>
     ) : (
-        <h2 className="y c">none</h2>
+        <h2 className="y c">no items</h2>
     )
 }
-
 export default memo(Items)

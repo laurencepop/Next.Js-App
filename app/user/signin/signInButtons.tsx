@@ -11,14 +11,14 @@ const SignInButtons = () => {
                 <input
                     type="button"
                     value="signup"
-                    onMouseUp={() => router.push("/signup")}
+                    onMouseUp={() => router.push("/user/signup")}
                 />
             </div>
             <div className="fc">
                 <input
                     type="button"
                     value="recover"
-                    onMouseUp={() => router.push("/rec")}
+                    onMouseUp={() => router.push("/user/rec")}
                 />
             </div>
         </div>

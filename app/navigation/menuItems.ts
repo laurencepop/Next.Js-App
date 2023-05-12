@@ -12,7 +12,7 @@ const menuItems = [
     {
         menuName: "mainMenu",
         buttonName: "Items",
-        linkPath: "items",
+        linkPath: "items/items",
     },
     {
         menuName: "mainMenu",

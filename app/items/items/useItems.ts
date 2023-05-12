@@ -12,6 +12,7 @@ export default function useItems() {
         `${api}/api/items`,
         options
     )
+
     const [items, setItems] = useState<i_dbItem[]>([])
 
     useEffect(() => {

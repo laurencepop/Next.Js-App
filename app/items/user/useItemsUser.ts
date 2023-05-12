@@ -5,8 +5,10 @@ import useFetch from "../../hooks/useFetch"
 import { options } from "../../hooks/useFetchOptionsGET"
 import { i_dbItem } from "../../items/interfaces"
 import { UserContext } from "../../user/userContext"
+import useUserCheck from "../userCheck"
 
 export default function useUserItems() {
+    useUserCheck()
     const api = useApiUrl()
     const { wait, data, err } = useFetch<i_dbItem[]>(
         `${api}/api/items`,

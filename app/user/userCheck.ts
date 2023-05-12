@@ -8,8 +8,8 @@ import { UserContext } from "./userContext"
 
 export default function useUserCheck() {
     const { user } = UserContext()
-    const router = useRouter()
     const isObject = useObject<i_User | null>(user)
+    const router = useRouter()
 
     useEffect(() => {
         isObject && router.replace("/")

@@ -1,5 +1,10 @@
 [
     {
+        "name": "Items",
+        "description": "shopping card including various options",
+        "path": "items/items"
+    },
+    {
         "name": "User Account",
         "description": "create your own user account and sign in",
         "path": "user/signin"
@@ -13,10 +18,5 @@
         "name": "User Items",
         "description": "view you own Items items and edit their attributes",
         "path": "items/user"
-    },
-    {
-        "name": "Items",
-        "description": "shopping card including various options",
-        "path": "items/items"
     }
 ]

@@ -8,16 +8,20 @@ import { UserContext } from "../user/userContext"
 
 export default function useUserCheck() {
     const { user } = UserContext()
-    const router = useRouter()
     const isObject = useObject<i_User | null>(user)
+    const router = useRouter()
+
+    // useEffect(() => {
+    //     !isObject &&
+    //         router.push({
+    //             pathname: "user/signin",
+    //             query: "please sign in",
+    //         })
+    // }, [user])
 
     useEffect(() => {
-        !isObject &&
-            router.push({
-                pathname: "/user/signin",
-                query: "please sign in",
-            })
-    }, [user])
+        isObject && router.replace("/")
+    }, [isObject])
 
-    return
+    return null
 }
