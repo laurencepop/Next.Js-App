@@ -31,7 +31,7 @@ const ButtonCart = () => {
             onMouseUp={goToCart}
             className="mB"
         >
-            {cartCount !== 0 ? cartCount : "Welcome!"}
+            {cartCount !== 0 ? cartCount : <p>Welcome!</p>}
         </div>
     )
 }

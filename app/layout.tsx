@@ -1,3 +1,4 @@
+// import { Suspense } from "react"
 import { CapsOn } from "./funcs/capsOn"
 import { MouseUp } from "./funcs/mouseUp"
 import "./globals.css"
@@ -6,6 +7,13 @@ import Menu from "./navigation/menu"
 import NavContextProvider from "./navigation/navContext"
 import Nav from "./navigation/navbar"
 import UserContextProvider from "./user/userContext"
+
+import { Montserrat } from "next/font/google"
+const montserrat = Montserrat({
+    weight: ["400", "700"],
+    subsets: ["latin"],
+    variable: "--font-montserrat",
+})
 
 export const metadata = {
     title: "Create Next App",
@@ -19,7 +27,8 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body>
+            <body className={`${montserrat.className}`}>
+                {/* <Suspense fallback={<p>Loading...</p>}> */}
                 <UserContextProvider>
                     <CartContextProvider>
                         <NavContextProvider>
@@ -30,11 +39,13 @@ export default function RootLayout({
                                 </div>
                                 <div>{children}</div>
                             </main>
+                            {/* <Footer/> */}
                             <CapsOn />
                             <MouseUp />
                         </NavContextProvider>
                     </CartContextProvider>
                 </UserContextProvider>
+                {/* </Suspense> */}
             </body>
         </html>
     )

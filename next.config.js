@@ -6,6 +6,8 @@ const nextConfig = {
             "i.dummyjson.com",
             "user-images.githubusercontent.com",
             "pngimg.com",
+            "via.placeholder.com",
+            "api.slingacademy.com",
         ],
     },
 }
