@@ -1,4 +1,3 @@
-// import { Suspense } from "react"
 import { CapsOn } from "./funcs/capsOn"
 import { MouseUp } from "./funcs/mouseUp"
 import "./globals.css"
@@ -28,7 +27,6 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${montserrat.className}`}>
-                {/* <Suspense fallback={<p>Loading...</p>}> */}
                 <UserContextProvider>
                     <CartContextProvider>
                         <NavContextProvider>
@@ -45,7 +43,6 @@ export default function RootLayout({
                         </NavContextProvider>
                     </CartContextProvider>
                 </UserContextProvider>
-                {/* </Suspense> */}
             </body>
         </html>
     )

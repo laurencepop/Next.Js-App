@@ -10,12 +10,12 @@ export default function GlobalError({
     reset: () => void
 }) {
     useEffect(() => {
-        console.log(`ERROR:\n${error}`)
+        console.log(`### GLOBAL ERROR MESSAGE ###\n${error.message}`)
     }, [error])
 
     return (
         <>
-            <b>Error</b>
+            <b>Global Error</b>
 			<br />
             <div className="l c">
                 <p>{error.message}</p>

@@ -11,7 +11,7 @@ export default function View({ ...photo }: i_photo) {
             <br />
             <p>{photo.description}</p>
             <br />
-            <Link href={`/test`} target="_self">
+            <Link rel="preload" href={`/test`} target="_self">
                 <button>back</button>
             </Link>
         </div>
