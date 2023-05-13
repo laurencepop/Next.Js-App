@@ -1,5 +1,9 @@
 export default function Loading() {
-	// You can add any UI inside Loading, including a Skeleton.
-	// return <LoadingSkeleton />
-	return <b className="y c">loading...</b>
+	return (
+		<div id="preloader">
+			<div id="loader">
+				<div id="circle"></div>
+			</div>
+		</div>
+	)
 }
