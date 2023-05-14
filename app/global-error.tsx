@@ -2,13 +2,7 @@
 
 import { useEffect } from "react"
 
-export default function GlobalError({
-    error,
-    reset,
-}: {
-    error: Error
-    reset: () => void
-}) {
+const GlobalError = ({ error, reset }: { error: Error; reset: () => void }) => {
     useEffect(() => {
         console.log(`### GLOBAL ERROR MESSAGE ###\n${error.message}`)
     }, [error])
@@ -16,7 +10,7 @@ export default function GlobalError({
     return (
         <>
             <b>Global Error</b>
-			<br />
+            <br />
             <div className="l c">
                 <p>{error.message}</p>
                 <br />
@@ -25,3 +19,5 @@ export default function GlobalError({
         </>
     )
 }
+
+export default GlobalError

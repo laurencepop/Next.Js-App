@@ -2,13 +2,7 @@
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 
-export default function Error({
-    error,
-    reset,
-}: {
-    error: Error
-    reset: () => void
-}) {
+const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
     const router = useRouter()
     const errorLocation = document.location.pathname
 
@@ -16,7 +10,7 @@ export default function Error({
         console.log(
             `## ERROR ##\nLocation: ${errorLocation}\nMessage:${error.message}`
         )
-    }, [error])
+    }, [ error ])
 
     return (
         <div className="x c">
@@ -47,3 +41,5 @@ export default function Error({
         </div>
     )
 }
+
+export default Error
