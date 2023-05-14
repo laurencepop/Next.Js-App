@@ -1,7 +1,7 @@
 "use client"
 
+import { i_photo } from "@/test/interfaces"
 import Link from "next/link"
-import { i_photo } from "./interfaces"
 
 export default function View({ ...item }: i_photo) {
     return (
@@ -14,7 +14,8 @@ export default function View({ ...item }: i_photo) {
                 href={`/test/${item.id}/${item.title}`}
                 target="_self"
             >
-                <p className="g">{item.title}</p>
+                <p className="g">Title: {item.title}</p>
+                <p>User: {item.user}</p>
             </Link>
         </div>
     )

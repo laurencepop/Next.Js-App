@@ -41,7 +41,16 @@
             }
         ],
         "paths": {
-            "@/*": ["./*"]
+            "@/*": ["./*"],
+            "@/contact/*": ["./app/contact"],
+            "@/funcs/*": ["./app/funcs/*"],
+            "@/home/*": ["./app/home/*"],
+            "@/hooks/*": ["./app/hooks/*"],
+            "@/items/*": ["./app/items/*"],
+            "@/navigation/*": ["./app/navigation/*"],
+            "@/test/*": ["./app/test/*"],
+            "@/user/*": ["./app/user/*"],
+            "@/utils/*": ["./app/utils/*"]
         }
     },
     "typeAcquisition": {

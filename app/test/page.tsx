@@ -1,5 +1,5 @@
-import { i_data, i_photo } from "./interfaces"
-import View from "./view"
+import { i_data, i_photo } from "@/test/interfaces"
+import View from "@/test/view"
 
 export const metadata = {
     title: "Album",
