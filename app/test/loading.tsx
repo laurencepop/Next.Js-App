@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function() {
 	return (
 		<div id="preloader">
 			<div id="loader">

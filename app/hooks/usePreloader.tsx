@@ -1,6 +1,6 @@
 "use client"
 
-export default function usePreloader() {
+export default function() {
     return (
         <div id="preloader">
             <div id="loader">
