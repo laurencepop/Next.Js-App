@@ -1,21 +1,25 @@
 "use client"
 
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { useEffect } from "react"
 
-export default function Page() {
+export default async function () {
     const router = useRouter()
+    const pathname = usePathname()
+
     const goHome = () => router.replace("/")
 
     useEffect(() => {
-        setTimeout(goHome, 0) // or 6000 to keep showing code below
-    }, [])
+        setTimeout(goHome, 8000)
+    }, [pathname])
 
     return (
         <div className="c l r">
             <br />
             <br />
-            <b>wrong path...</b>
+            <b className="r">Inexistent path</b>
+            <br />
+            <p className="c">{pathname}</p>
             <br />
             <br />
             <input type="button" value="home" onMouseUp={goHome} />
