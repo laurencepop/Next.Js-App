@@ -1,19 +1,19 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { i_photo } from "../interfaces"
 
 export default function View({ ...photo }: i_photo) {
+    const router = useRouter()
+
     return (
         <div className="x c" key={photo.id}>
             <Image src={photo.url} alt={photo.title} width={500} height={500} />
             <br />
             <p>{photo.description}</p>
             <br />
-            <Link rel="preload" href={`/test`} target="_self">
-                <button>back</button>
-            </Link>
+            <input type="button" value="back" onMouseUp={() => router.back()} />
         </div>
     )
 }

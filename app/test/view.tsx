@@ -9,7 +9,11 @@ export default function View({ ...item }: i_photo) {
             className="border-2 p-4 hover:bg-sky-700 cursor-pointer"
             key={item.id}
         >
-            <Link rel="preload" href={`/test/${item.id}`} target="_self">
+            <Link
+                rel="preload"
+                href={`/test/${item.id}/${item.title}`}
+                target="_self"
+            >
                 <p className="g">{item.title}</p>
             </Link>
         </div>
