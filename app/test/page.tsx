@@ -1,4 +1,4 @@
-import { i_data, i_photo } from "@/test/interfaces"
+import { i_data } from "@/test/interfaces"
 import View from "@/test/view"
 
 export const metadata = {
@@ -12,13 +12,5 @@ export default async function () {
 
     const data: i_data = await response.json()
 
-    return data.success ? (
-        <div className="grid gap-16 grid-cols-fluid">
-            {data.photos.map((item: i_photo) => (
-                <View {...item} />
-            ))}
-        </div>
-    ) : (
-        <p>no data</p>
-    )
+    return data.success ? <View {...data} /> : <p>no data</p>
 }

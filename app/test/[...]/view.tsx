@@ -13,7 +13,7 @@ export default function View({ ...photo }: i_photo) {
             <Image src={photo.url} alt={photo.title} width={500} height={500} />
             <br />
             <p>{photo.description}</p>
-            <p className="g">User {photo.user}</p>
+            <p className="g text-right">User {photo.user}</p>
             <br />
             <input type="button" value="back" onMouseUp={() => router.back()} />
         </div>
