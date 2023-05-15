@@ -1,13 +1,13 @@
 "use client"
 
-import useObject from "@/functions/checkObject"
+import checkObject from "@/functions/checkObject"
 import { i_photo } from "@/test/interfaces"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 
 export default function View({ ...photo }: i_photo) {
     const router = useRouter()
-    const isObject = useObject<i_photo>(photo)
+    const isObject = checkObject<i_photo>(photo)
 
     return isObject ? (
         <div className="x c" key={photo.id}>

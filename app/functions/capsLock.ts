@@ -3,11 +3,11 @@
 import { useCallback, useEffect } from "react"
 
 export default function () {
-    const capsOn = useCallback((e: KeyboardEvent) => {
-        e.preventDefault()
+    const capsOn = useCallback((event: KeyboardEvent) => {
+        event.preventDefault()
 
-        if (typeof e.getModifierState === "function") {
-            e.getModifierState("CapsLock") && alert("CapsLock is ON")
+        if (typeof event.getModifierState === "function") {
+            event.getModifierState("CapsLock") && alert("CapsLock is ON")
         }
     }, [])
 

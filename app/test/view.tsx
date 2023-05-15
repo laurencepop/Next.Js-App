@@ -1,11 +1,11 @@
 "use client"
 
+import checkObject from "@/functions/checkObject"
 import { i_data, i_photo } from "@/test/interfaces"
 import Link from "next/link"
-import useObject from "../functions/checkObject"
 
 export default function View({ ...data }: i_data) {
-    const isObject = useObject<i_photo[]>(data.photos)
+    const isObject = checkObject<i_photo[]>(data.photos)
 
     return isObject ? (
         <div className="grid gap-16 grid-cols-fluid">
