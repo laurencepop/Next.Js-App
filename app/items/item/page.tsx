@@ -1,11 +1,11 @@
 "use client"
+import { useApiUrl } from "@/hooks/useApiUrl"
+import useFetch from "@/hooks/useFetch"
+import { options } from "@/hooks/useFetchOptionsGET"
+import { i_dbItem } from "@/items/interfaces"
+import ItemView from "@/items/item/itemView"
 import { useParams } from "next/navigation"
 import { memo, useEffect, useState } from "react"
-import { useApiUrl } from "../../hooks/useApiUrl"
-import useFetch from "../../hooks/useFetch"
-import { options } from "../../hooks/useFetchOptionsGET"
-import { i_dbItem } from "../../items/interfaces"
-import ItemView from "./itemView"
 
 const Item = () => {
     const id = String(useParams().item)

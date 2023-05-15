@@ -11,7 +11,7 @@ const ButtonMenu = () => {
     return (
         <div>
             <input
-                id="mBtn"
+                id="mainMenuButton"
                 type="button"
                 value="&#x2261;"
                 onMouseUp={toggleExpand}

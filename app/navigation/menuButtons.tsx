@@ -16,7 +16,7 @@ const MenuButtons = ({ isMenu }: { isMenu: string }) => {
                         <Link
                             key={item.buttonName}
                             href={item.linkPath}
-                            className="p mB"
+                            className="p menuButton"
                             style={
                                 pathname.startsWith(item.linkPath)
                                     ? { color: "#aa2" }

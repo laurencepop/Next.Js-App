@@ -1,8 +1,8 @@
 "use client"
 
+import ItemInputs from "@/items/itemInputs"
+import useNew from "@/items/new/useNew"
 import { memo } from "react"
-import ItemInputs from "../itemInputs"
-import useNew from "./useNew"
 
 const New = () => {
     const { values, setOnChange, submit, error, loading, info } = useNew()

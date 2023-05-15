@@ -1,10 +1,10 @@
 "use client"
-import useObject from "@/app/hooks/useObject"
-import { i_CartItem } from "@/app/items/interfaces"
+import useObject from "@/hooks/useObject"
+import { CartContext } from "@/items/cart/cartContext"
+import CartItemButtons from "@/items/cart/cartItemButtons"
+import { i_CartItem } from "@/items/interfaces"
 import Image from "next/image"
 import { memo } from "react"
-import { CartContext } from "./cartContext"
-import CartItemButtons from "./cartItemButtons"
 
 const CartItems = ({ ...props }) => {
     const { cart, cartAdd, cartDel } = CartContext()

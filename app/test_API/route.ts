@@ -50,11 +50,11 @@ export async function POST(req: NextRequest) {
 
 // or try to see if works, using NextApiRequest & NextApiResponse:
 
-// interface YYY {
-//     message: string | undefined
-// }
+interface YYY {
+    message: string | undefined
+}
 
-// export async function POST(req: NextApiRequest, res: NextApiResponse<YYY>) {
-//     console.log(`Req method: ${req.method}`)
-//     res.status(200).json({ message: `Req method: ${req.method}` })
-// }
+export async function PUT(req: NextApiRequest, res: NextApiResponse<YYY>) {
+    console.log(`Req method: ${req.method}`)
+    res.status(200).json({ message: `Req method: ${req.method}` })
+}

@@ -112,6 +112,11 @@
     margin: 2rem 0;
 }
 
+.o {
+    outline: 0.4rem solid var(--g);
+    outline-offset: -0.4rem;
+}
+
 /* ---------------------------------- FLEX ---------------------------------- */
 
 .fx {
@@ -832,7 +837,7 @@ main {
     color: var(--y);
 }
 
-.sBtn.open::after {
+.sectionButton.open::after {
     content: "\21B4\00a0";
     padding: 0 0.8rem;
 }
@@ -840,6 +845,17 @@ main {
 .sMenu .p {
     animation: fadeIn 0.8s;
     padding: 0 2rem;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer {
+    display: block;
+    position: relative;
+    top: 10rem;
+    width: 100%;
+    margin: 0;
+    padding: 4rem 0;
 }
 
 /* ---------------------------------- HOME ---------------------------------- */

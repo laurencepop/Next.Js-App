@@ -41,12 +41,14 @@
             }
         ],
         "paths": {
-            "@/*": ["./*"],
-            "@/contact/*": ["./app/contact"],
+            "@/*": ["./app/*"],
+            "@/contact/*": ["./app/contact/*"],
+            "@/components/*": ["./app/components/*"],
             "@/funcs/*": ["./app/funcs/*"],
             "@/home/*": ["./app/home/*"],
             "@/hooks/*": ["./app/hooks/*"],
             "@/items/*": ["./app/items/*"],
+            "@/nasa/*": ["./app/nasa/*"],
             "@/navigation/*": ["./app/navigation/*"],
             "@/test/*": ["./app/test/*"],
             "@/user/*": ["./app/user/*"],

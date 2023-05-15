@@ -1,4 +1,4 @@
-import View from "@/test/[...]/view"
+import View from "@/app/test/[...]/view"
 import { i_item } from "@/test/interfaces"
 import { Metadata } from "next"
 
@@ -12,11 +12,9 @@ export async function generateMetadata({
     return { title: decodeURIComponent(second) }
 }
 
-// export default async function ({ params }: { params: { id: string } }) {
 export default async function ({ params }: { params: string[] }) {
-    const key = Object.values(params)[0] // get first url params object key
-    const id = key.slice(0, 1) // get first key-value array entry
-
+    const key = Object.values(params)[0]
+    const id = key.slice(0, 1)
     const itemUrl = `${process.env.PHOTOS_API}/${id}`
     const response = await fetch(itemUrl, { next: { revalidate: 60 } })
     const item: i_item = await response.json()

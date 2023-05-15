@@ -1,9 +1,9 @@
 "use client"
 
-import useObject from "@/app/hooks/useObject"
+import useObject from "@/hooks/useObject"
+import { CartContext } from "@/items/cart/cartContext"
+import { i_CartItem } from "@/items/interfaces"
 import { useEffect, useState } from "react"
-import { i_CartItem } from "../interfaces"
-import { CartContext } from "./cartContext"
 
 export default function useCartCount() {
     const { cart } = CartContext()

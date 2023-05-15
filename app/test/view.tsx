@@ -10,19 +10,17 @@ export default function View({ ...data }: i_data) {
     return isObject ? (
         <div className="grid gap-16 grid-cols-fluid">
             {data.photos.map((item: i_photo) => (
-                <div
+                <Link
                     key={item.id}
-                    className="border-4 p-8 hover:bg-sky-800 cursor-pointer"
+                    rel="preload"
+                    href={`/test/${item.id}/${item.title}`}
+                    target="_self"
                 >
-                    <Link
-                        rel="preload"
-                        href={`/test/${item.id}/${item.title}`}
-                        target="_self"
-                    >
+                    <div className="o cp h-80 p-4 hover:bg-sky-800">
                         <p className="g">Title: {item.title}</p>
                         <p>User: {item.user}</p>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             ))}
         </div>
     ) : (

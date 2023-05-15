@@ -1,10 +1,14 @@
 "use client"
+import { useCapsOn } from "@/hooks/useCapsOn"
+import { useMouseUp } from "@/hooks/useMouseUp"
+import MenuButtons from "@/navigation/menuButtons"
+import { NavContext } from "@/navigation/navContext"
 import { memo } from "react"
-import MenuButtons from "./menuButtons"
-import { NavContext } from "./navContext"
 
 const Menu = () => {
     const { expand } = NavContext()
+    useMouseUp()
+    useCapsOn()
 
     return (
         <div id="menu" className={expand ? "show" : "hide"}>

@@ -20,7 +20,7 @@ const ButtonSignInOut = () => {
         <div>
             <input
                 type="button"
-                className="mB"
+                className="menuButton"
                 value={user ? "\u27B2" : "\u2687"}
                 title={user ? "signout" : "signin"}
                 onMouseUp={user ? signOutButton : () => router.push("/user/signin")}

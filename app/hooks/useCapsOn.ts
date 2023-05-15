@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect } from "react"
 
-export function CapsOn() {
+export function useCapsOn() {
 	const capsOn = useCallback((e: KeyboardEvent) => {
 		e.preventDefault()
 

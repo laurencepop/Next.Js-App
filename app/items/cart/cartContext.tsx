@@ -1,5 +1,6 @@
 "use client"
-import useObject from "@/app/hooks/useObject"
+import useObject from "@/hooks/useObject"
+import { i_CartItem, i_ItemsContext } from "@/items/interfaces"
 import {
     createContext,
     useContext,
@@ -7,7 +8,6 @@ import {
     useReducer,
     useState,
 } from "react"
-import { i_CartItem, i_ItemsContext } from "../interfaces"
 import { reducer } from "./cartReducer"
 
 const Context = createContext({} as i_ItemsContext)

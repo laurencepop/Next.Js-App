@@ -1,10 +1,10 @@
 "use client"
 
+import useObject from "@/hooks/useObject"
+import { i_User } from "@/user/interfaces"
+import { UserContext } from "@/user/userContext"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
-import useObject from "../hooks/useObject"
-import { i_User } from "./interfaces"
-import { UserContext } from "./userContext"
 
 export default function useUserCheck() {
     const { user } = UserContext()

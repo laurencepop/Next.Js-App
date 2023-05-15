@@ -1,7 +1,7 @@
 "use client"
 
+import { i_User, i_UserContext } from "@/user/interfaces"
 import { createContext, useContext, useEffect, useState } from "react"
-import { i_User, i_UserContext } from "./interfaces"
 
 const Context = createContext({} as i_UserContext)
 export const UserContext = () => useContext(Context)

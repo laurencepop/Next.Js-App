@@ -1,12 +1,12 @@
 "use client"
 
+import ButtonCart from "@/navigation/navbarButtonCart"
+import ButtonFont from "@/navigation/navbarButtonFont"
+import ButtonMenu from "@/navigation/navbarButtonMenu"
+import ButtonSignInOut from "@/navigation/navbarButtonSign"
+import ButtonTheme from "@/navigation/navbarButtonTheme"
+import InputSearch from "@/navigation/navbarSearchInput"
 import { memo } from "react"
-import ButtonCart from "./navbarButtonCart"
-import ButtonFont from "./navbarButtonFont"
-import ButtonMenu from "./navbarButtonMenu"
-import ButtonSignInOut from "./navbarButtonSign"
-import ButtonTheme from "./navbarButtonTheme"
-import InputSearch from "./navbarSearchInput"
 
 const Nav = () => {
     return (

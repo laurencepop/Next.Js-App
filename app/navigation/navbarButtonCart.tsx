@@ -29,7 +29,7 @@ const ButtonCart = () => {
             onMouseEnter={() => setColor("#fff")}
             onMouseLeave={() => setColor("#2aa")}
             onMouseUp={goToCart}
-            className="mB"
+            className="menuButton"
         >
             {cartCount !== 0 ? cartCount : <p>Welcome!</p>}
         </div>

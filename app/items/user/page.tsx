@@ -1,10 +1,10 @@
 "use client"
+import useObject from "@/hooks/useObject"
+import { i_dbItem } from "@/items/interfaces"
+import ItemsUserMap from "@/items/user/itemsUserMap"
+import useUserItems from "@/items/user/useItemsUser"
+import useItemsUserScroll from "@/items/user/useItemsUserScroll"
 import { memo } from "react"
-import useObject from "../../hooks/useObject"
-import { i_dbItem } from "../interfaces"
-import ItemsUserMap from "./itemsUserMap"
-import useUserItems from "./useItemsUser"
-import useItemsUserScroll from "./useItemsUserScroll"
 
 const ItemsUser = () => {
     const { wait, err, items } = useUserItems()
@@ -12,7 +12,7 @@ const ItemsUser = () => {
     useItemsUserScroll()
 
     return wait ? (
-        <b className="c">wait...</b>
+        <b className="c">wait@/items.</b>
     ) : err ? (
         <>
             <b className="r">Error</b>
