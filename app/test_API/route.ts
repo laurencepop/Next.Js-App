@@ -2,6 +2,8 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import { NextRequest } from "next/server"
 import Logger from "../utils/logger"
 
+//? https://nextjs.org/docs/app/building-your-application/routing/middleware
+
 /* -------------------------------------------------------------------------- */
 
 type XXX = {
