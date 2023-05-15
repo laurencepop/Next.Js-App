@@ -1,9 +1,7 @@
-"use client"
-
-const KeyUpTextArea = (
+export default function (
     tA: React.RefObject<HTMLTextAreaElement>,
     ms: React.RefObject<HTMLParagraphElement>
-) => {
+) {
     if (tA.current) {
         // auto hight
         const oHi = Number(tA.current.offsetHeight)
@@ -25,5 +23,3 @@ const KeyUpTextArea = (
         }
     }
 }
-
-export default KeyUpTextArea

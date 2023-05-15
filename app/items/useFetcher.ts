@@ -1,14 +1,13 @@
 "use client"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
-import { useApiUrl } from "../hooks/useApiUrl"
+import baseURL from "../functions/baseURL"
 import { UserContext } from "../user/userContext"
 
 export default function useFetcher() {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
     const [info, setInfo] = useState("")
-    const api = useApiUrl()
     const router = useRouter()
     const { user } = UserContext()
 
@@ -19,7 +18,7 @@ export default function useFetcher() {
 
         const controller = new AbortController()
         try {
-            let req = new Request(`${api}/api/items/${fetchData.path}`, {
+            let req = new Request(`${baseURL}/api/items/${fetchData.path}`, {
                 credentials: "omit", //FIXME same-origin, omit, include
                 mode: "cors", //FIXME no-cors, cors, same-origin
                 method: fetchData.method,

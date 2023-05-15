@@ -2,7 +2,7 @@
 
 import { i_data, i_photo } from "@/test/interfaces"
 import Link from "next/link"
-import useObject from "../hooks/useObject"
+import useObject from "../functions/checkObject"
 
 export default function View({ ...data }: i_data) {
     const isObject = useObject<i_photo[]>(data.photos)

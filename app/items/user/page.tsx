@@ -1,5 +1,5 @@
 "use client"
-import useObject from "@/hooks/useObject"
+import checkObject from "@/functions/checkObject"
 import { i_dbItem } from "@/items/interfaces"
 import ItemsUserMap from "@/items/user/itemsUserMap"
 import useUserItems from "@/items/user/useItemsUser"
@@ -8,7 +8,7 @@ import { memo } from "react"
 
 const ItemsUser = () => {
     const { wait, err, items } = useUserItems()
-    const isObject = useObject<i_dbItem[]>(items)
+    const isObject = checkObject<i_dbItem[]>(items)
     useItemsUserScroll()
 
     return wait ? (

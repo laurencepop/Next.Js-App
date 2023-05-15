@@ -3,7 +3,7 @@
 import { useCallback, useEffect } from "react"
 import { NavContext } from "../navigation/navContext"
 
-export function useMouseUp() {
+export default function() {
     const { expandMenu, setSearchValue } = NavContext()
 
     const mouse = useCallback(

@@ -1,6 +1,6 @@
 "use client"
 
-import useObject from "@/app/hooks/useObject"
+import useObject from "@/functions/checkObject"
 import { i_photo } from "@/test/interfaces"
 import Image from "next/image"
 import { useRouter } from "next/navigation"

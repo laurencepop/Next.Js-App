@@ -1,14 +1,13 @@
 "use client"
-import { useApiUrl } from "../hooks/useApiUrl"
+import baseURL from "../functions/baseURL"
 import { UserContext } from "../user/userContext"
 
 export default function SignOut() {
     const { user, setUser } = UserContext()
-    const api = useApiUrl()
 
     const action = async () => {
         const controller = new AbortController()
-        let req = new Request(`${api}/api/users/signout`, {
+        let req = new Request(`${baseURL}/api/users/signout`, {
             credentials: "omit", //FIXME same-origin, omit, include
             mode: "cors", //FIXME no-cors, cors, same-origin
             method: "POST",

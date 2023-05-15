@@ -1,6 +1,6 @@
 "use client"
 
-import useObject from "@/hooks/useObject"
+import checkObject from "@/functions/checkObject"
 import { CartContext } from "@/items/cart/cartContext"
 import { i_CartItem } from "@/items/interfaces"
 import { useEffect, useState } from "react"
@@ -9,7 +9,7 @@ export default function useCartTotal(exchange: number) {
     const { cart } = CartContext()
     const [totalPrice, setTotalPrice] = useState<number>(0)
 
-    const isObject = useObject<i_CartItem[]>(cart)
+    const isObject = checkObject<i_CartItem[]>(cart)
 
     useEffect(() => {
         isObject &&

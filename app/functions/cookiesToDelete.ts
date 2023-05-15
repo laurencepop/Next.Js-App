@@ -1,6 +1,4 @@
-"use client"
-
-export default function cookiesDelete(cookieArray: string[]) {
+export default function (cookieArray: string[]) {
     document.cookie.split(";").forEach((cookie) => {
         const position = cookie.indexOf("=")
         const cookieName = position > -1 ? cookie.slice(0, position) : cookie
@@ -17,5 +15,8 @@ export default function cookiesDelete(cookieArray: string[]) {
     })
 }
 
-//! cookies will get deleted if name in array:
-// usage: cookiesDelete([ "xxx", "yyy", "zzz" ])
+/*
+import cookiesToDelete from "@/funcs/cookiesToDelete"
+cookiesToDelete([ "xxx", "yyy", "zzz" ])
+! cookies will get deleted if name in array above here
+*/

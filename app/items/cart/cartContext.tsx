@@ -1,5 +1,5 @@
 "use client"
-import useObject from "@/hooks/useObject"
+import checkObject from "@/functions/checkObject"
 import { i_CartItem, i_ItemsContext } from "@/items/interfaces"
 import {
     createContext,
@@ -19,7 +19,7 @@ const CartContextProvider = ({ children }: { children: React.ReactNode }) => {
     const [state, dispatch] = useReducer(reducer, { content: cart })
     const cartAdd = (i: i_CartItem) => dispatch({ type: "addItem", item: i })
     const cartDel = (i: i_CartItem) => dispatch({ type: "delItem", item: i })
-    const isObject = useObject<i_CartItem[]>(state.content)
+    const isObject = checkObject<i_CartItem[]>(state.content)
 
     useEffect(() => {
         if (isObject) {

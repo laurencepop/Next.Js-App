@@ -1,4 +1,4 @@
-import View from "@/app/test/[...]/view"
+import View from "@/test/[...]/view"
 import { i_item } from "@/test/interfaces"
 import { Metadata } from "next"
 

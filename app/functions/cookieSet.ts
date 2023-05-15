@@ -1,10 +1,8 @@
-"use client"
-
-const cookiesSet = (
+export default function (
     cookieName: string,
     cookieValue: string | number | boolean,
     hoursValid: number
-) => {
+) {
     const DateNow = new Date()
     DateNow.setTime(DateNow.getTime() + hoursValid * 60 * 60 * 1000)
     const expire = DateNow.toUTCString()
@@ -23,11 +21,10 @@ const cookiesSet = (
         "samesite=Strict;"
 }
 
-export default cookiesSet
+/*
+import cookieSet from "@/funcs/cookieSet"
+cookieSet(cookieName,cookieValue,hoursValid)
 
-// ~ usage: cookiesSet(cookieName,cookieValue,hoursValid)
-
-/**
 * Use encodeURIComponent() & decodeURIComponent() to encode & decode t cookie vl
 
 * 'domain' => ''

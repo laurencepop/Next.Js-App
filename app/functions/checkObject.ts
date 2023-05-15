@@ -1,6 +1,4 @@
-"use client"
-
-export default function useObject<T>(data: T) {
+export default function <T>(data: T) {
     const objectTypeCheck = (data: any) =>
         typeof data === "object" && data !== null
 
