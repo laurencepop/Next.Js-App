@@ -1,8 +1,8 @@
 "use client"
+import SignOut from "@/user/signOut"
+import { UserContext } from "@/user/userContext"
 import { useRouter } from "next/navigation"
 import { memo, useCallback, useEffect } from "react"
-import SignOut from "../../user/signOut"
-import { UserContext } from "../../user/userContext"
 
 const ButtonSignInOut = () => {
     const router = useRouter()
@@ -23,7 +23,9 @@ const ButtonSignInOut = () => {
                 className="menuButton"
                 value={user ? "\u27B2" : "\u2687"}
                 title={user ? "signout" : "signin"}
-                onMouseUp={user ? signOutButton : () => router.push("/user/signin")}
+                onMouseUp={
+                    user ? signOutButton : () => router.push("/user/signin")
+                }
                 style={user ? { background: "#f00" } : undefined}
             />
         </div>

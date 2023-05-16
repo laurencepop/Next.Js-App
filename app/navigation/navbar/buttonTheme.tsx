@@ -2,7 +2,7 @@
 import { memo, useEffect, useState } from "react"
 
 const ButtonTheme = () => {
-    const [ theme, setTheme ] = useState<string>("")
+    const [theme, setTheme] = useState<string>("")
 
     const toggleTheme = () => (theme === "D" ? setTheme("L") : setTheme("D"))
 

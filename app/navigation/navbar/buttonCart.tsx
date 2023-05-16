@@ -1,7 +1,7 @@
 "use client"
+import useCartCount from "@/items/cart/useCartCount"
 import { useRouter } from "next/navigation"
 import { memo, useState } from "react"
-import useCartCount from "../../items/cart/useCartCount"
 
 const ButtonCart = () => {
     const { cartCount } = useCartCount()

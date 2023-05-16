@@ -1,7 +1,7 @@
 "use client"
 
+import { i_NavContext } from "@/navigation/interfaces"
 import { createContext, useContext, useState } from "react"
-import { i_NavContext } from "./interfaces"
 
 const Context = createContext({} as i_NavContext)
 export const NavContext = () => useContext(Context)

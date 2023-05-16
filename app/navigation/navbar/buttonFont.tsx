@@ -1,6 +1,6 @@
 "use client"
+import { useSizes } from "@/hooks/useSizes"
 import { memo, useEffect, useState } from "react"
-import { useSizes } from "../../hooks/useSizes"
 
 const ButtonFont = () => {
     const [wW] = useSizes()
