@@ -9,5 +9,5 @@ export default function (ms: number) {
 import delay from "@/functions/delay"
 
 await delay(8)
-return ()
+return () // above return
 */
