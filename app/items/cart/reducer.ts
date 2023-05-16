@@ -1,5 +1,5 @@
 "use client"
-import { i_CartItem } from "../interfaces"
+import { i_CartItem } from "@/items/interfaces"
 
 const addItemToCart = (item: i_CartItem, state: { content: i_CartItem[] }) => {
     const cartItems = [...state.content]

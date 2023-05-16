@@ -1,11 +1,11 @@
 "use client"
 
 // import { useRouter } from "next/router"
+import SignInButtons from "@/user/signin/buttons"
+import SignInInputs from "@/user/signin/inputs"
+import useSignIn from "@/user/signin/useSignIn"
+import useUserCheck from "@/user/userCheck"
 import { memo } from "react"
-import useUserCheck from "../userCheck"
-import SignInButtons from "./signInButtons"
-import SignInInputs from "./signInInputs"
-import useSignIn from "./useSignIn"
 
 const SignIn = () => {
     useUserCheck()

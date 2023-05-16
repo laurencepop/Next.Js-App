@@ -1,5 +1,6 @@
 "use client"
 import checkObject from "@/functions/checkObject"
+import { reducer } from "@/items/cart/reducer"
 import { i_CartItem, i_ItemsContext } from "@/items/interfaces"
 import {
     createContext,
@@ -8,7 +9,6 @@ import {
     useReducer,
     useState,
 } from "react"
-import { reducer } from "./cartReducer"
 
 const Context = createContext({} as i_ItemsContext)
 export const CartContext = () => useContext(Context)

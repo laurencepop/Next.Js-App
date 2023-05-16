@@ -1,9 +1,9 @@
 "use client"
 
+import { NavContext } from "@/navigation/context"
 import { useCallback, useEffect } from "react"
-import { NavContext } from "../navigation/navContext"
 
-export default function() {
+export default function () {
     const { expandMenu, setSearchValue } = NavContext()
 
     const mouse = useCallback(

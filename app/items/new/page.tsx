@@ -1,6 +1,6 @@
 "use client"
 
-import ItemInputs from "@/items/itemInputs"
+import ItemInputs from "@/items/inputs"
 import useNew from "@/items/new/useNew"
 import { memo } from "react"
 

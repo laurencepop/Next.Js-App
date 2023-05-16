@@ -1,10 +1,10 @@
 "use client"
 
+import baseURL from "@/functions/baseURL"
+import useFetch from "@/hooks/useFetch"
+import { options } from "@/hooks/useFetchOptionsGET"
+import { i_dbItem } from "@/items/interfaces"
 import { useEffect, useState } from "react"
-import baseURL from "../../functions/baseURL"
-import useFetch from "../../hooks/useFetch"
-import { options } from "../../hooks/useFetchOptionsGET"
-import { i_dbItem } from "../../items/interfaces"
 
 export default function useItems() {
     const { wait, data, err } = useFetch<i_dbItem[]>(

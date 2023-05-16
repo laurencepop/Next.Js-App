@@ -1,9 +1,9 @@
 "use client"
 
+import { i_Home } from "@/home/interfaces"
+import useHomeSeach from "@/home/useHomeSearch"
 import Link from "next/link"
 import { memo } from "react"
-import { i_Home } from "./interfaces"
-import useHomeSeach from "./useHomeSearch"
 
 const HomeMap = () => {
     const { entries } = useHomeSeach()

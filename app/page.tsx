@@ -1,10 +1,10 @@
 "use client"
 
-import { GitHubLink } from "./home/githubLink"
-import HomeMap from "./home/homeMap"
-import { UserContext } from "./user/userContext"
+import { GitHubLink } from "@/home/githubLink"
+import HomeMap from "@/home/view"
+import { UserContext } from "@/user/context"
 
-export default async function() {
+export default async function () {
     const { user } = UserContext()
 
     return (

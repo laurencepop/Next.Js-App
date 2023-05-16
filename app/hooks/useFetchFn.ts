@@ -1,6 +1,6 @@
 "use client"
+import { Action, Cache } from "@/hooks/interfaces"
 import { useEffect, useRef } from "react"
-import { Action, Cache } from "./interfaces"
 
 export default function useFetchFn<T>(
     url: string,

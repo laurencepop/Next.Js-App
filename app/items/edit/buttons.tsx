@@ -1,7 +1,7 @@
 "use client"
 
+import useEditBack from "@/items/edit/useEditBack"
 import { memo } from "react"
-import useEditBack from "./useEditBack"
 
 const EditButtons = ({ ...props }) => {
     const { back } = useEditBack()

@@ -1,9 +1,9 @@
 "use client"
 
+import SignUpForm from "@/user/signup/form"
+import useSignUp from "@/user/signup/useSignUp"
+import useUserCheck from "@/user/userCheck"
 import { memo } from "react"
-import useUserCheck from "../userCheck"
-import SignUpForm from "./signUpForm"
-import useSignUp from "./useSignUp"
 
 const SignUp = () => {
     useUserCheck()

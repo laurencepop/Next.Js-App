@@ -1,6 +1,6 @@
 "use client"
+import SignInShow from "@/user/signin/show"
 import { memo, useState } from "react"
-import SignInShow from "./signInShow"
 
 const SignInInputs = ({ ...props }) => {
     const [show, setShow] = useState(false)

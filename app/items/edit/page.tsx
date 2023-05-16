@@ -1,7 +1,7 @@
 "use client"
-import EditButtons from "@/items/edit/editButtons"
+import EditButtons from "@/items/edit/buttons"
 import useEdit from "@/items/edit/useEdit"
-import ItemInputs from "@/items/itemInputs"
+import ItemInputs from "@/items/inputs"
 import { memo, useEffect } from "react"
 
 const Edit = () => {

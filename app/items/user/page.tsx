@@ -1,9 +1,9 @@
 "use client"
 import checkObject from "@/functions/checkObject"
 import { i_dbItem } from "@/items/interfaces"
-import ItemsUserMap from "@/items/user/itemsUserMap"
 import useUserItems from "@/items/user/useItemsUser"
 import useItemsUserScroll from "@/items/user/useItemsUserScroll"
+import ItemsUserMap from "@/items/user/view"
 import { memo } from "react"
 
 const ItemsUser = () => {

@@ -1,7 +1,7 @@
 "use client"
+import { i_dbItem } from "@/items/interfaces"
+import useItems from "@/items/items/useItems"
 import { useEffect, useState } from "react"
-import { i_dbItem } from "../../items/interfaces"
-import useItems from "./useItems"
 
 export default function useItemsSort() {
     const { wait, err, items } = useItems()

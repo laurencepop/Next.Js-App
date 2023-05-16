@@ -1,9 +1,9 @@
 "use client"
 
 import useExchangeRate from "@/hooks/useExchangeRate"
-import CartCurrency from "@/items/cart/cartCurrency"
-import CartItems from "@/items/cart/cartItems"
+import CartCurrency from "@/items/cart/currency"
 import useCartTotal from "@/items/cart/useCartTotal"
+import CartItems from "@/items/cart/view"
 import { memo } from "react"
 
 const Cart = () => {

@@ -1,9 +1,9 @@
-import CartContextProvider from "@/items/cart/cartContext"
-import Menu from "@/navigation/menu/menu"
-import NavContextProvider from "@/navigation/navContext"
-import Nav from "@/navigation/navbar/navbar"
-import UserContextProvider from "@/user/userContext"
 import Footer from "@/components/footer"
+import CartContextProvider from "@/items/cart/context"
+import NavContextProvider from "@/navigation/context"
+import Menu from "@/navigation/menu/menu"
+import Nav from "@/navigation/navbar/navbar"
+import UserContextProvider from "@/user/context"
 import "./styles/globals.css"
 
 export const metadata = {

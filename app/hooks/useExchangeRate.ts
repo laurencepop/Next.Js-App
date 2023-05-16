@@ -1,9 +1,9 @@
 "use client"
 
+import { i_rates } from "@/hooks/interfaces"
+import useFetch from "@/hooks/useFetch"
+import { options } from "@/hooks/useFetchOptionsGET"
 import { useEffect, useState } from "react"
-import { i_rates } from "./interfaces"
-import useFetch from "./useFetch"
-import { options } from "./useFetchOptionsGET"
 
 export default function useExchangeRate() {
     const [currency, setCurrency] = useState<string>("")

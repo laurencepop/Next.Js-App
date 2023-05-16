@@ -1,8 +1,8 @@
 "use client"
+import { i_dbItem } from "@/items/interfaces"
+import useItemsUserClicks from "@/items/user/useItemsUserClicks"
 import Image from "next/image"
 import { memo } from "react"
-import { i_dbItem } from "../../items/interfaces"
-import useItemsUserClicks from "./useItemsUserClicks"
 
 const ItemsUserMap = ({ ...props }) => {
     const { addNew, edit } = useItemsUserClicks()

@@ -1,6 +1,6 @@
+import Logger from "@/utils/logger"
 import type { NextApiRequest, NextApiResponse } from "next"
 import { NextRequest } from "next/server"
-import Logger from "../utils/logger"
 
 //? https://nextjs.org/docs/app/building-your-application/routing/middleware
 
@@ -33,19 +33,13 @@ export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url)
     const param = searchParams.get("key") // api_name/folder?key=value
 
-    return new Response(
-        JSON.stringify({ message: param }),
-        { status: 200 }
-    )
+    return new Response(JSON.stringify({ message: param }), { status: 200 })
 }
 
 export async function POST(req: NextRequest) {
     const body = await req.json()
 
-    return new Response(
-        JSON.stringify({ message: body }),
-        { status: 200 }
-    )
+    return new Response(JSON.stringify({ message: body }), { status: 200 })
 }
 
 // or try to see if works, using NextApiRequest & NextApiResponse:

@@ -1,6 +1,6 @@
+import { cfg } from "@/utils/config"
 import jwt, { JwtPayload } from "jsonwebtoken"
 import { Types } from "mongoose"
-import { cfg } from "./config.js"
 
 const expire = 1000 * 60 * 60
 

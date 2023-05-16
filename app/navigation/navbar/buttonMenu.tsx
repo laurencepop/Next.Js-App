@@ -1,6 +1,6 @@
 "use client"
 
-import { NavContext } from "@/navigation/navContext"
+import { NavContext } from "@/navigation/context"
 import { memo } from "react"
 
 const ButtonMenu = () => {

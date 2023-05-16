@@ -1,9 +1,9 @@
 "use client"
 
+import ItemButtons from "@/items/item/buttons"
+import { UserContext } from "@/user/context"
 import Image from "next/image"
 import { memo } from "react"
-import { UserContext } from "../../user/userContext"
-import ItemButtons from "./ItemButtons"
 
 const ItemView = ({ ...props }) => {
     const { user } = UserContext()

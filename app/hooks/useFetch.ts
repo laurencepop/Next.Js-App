@@ -1,9 +1,9 @@
 "use client"
 
+import { Cache, State } from "@/hooks/interfaces"
+import useFetchFn from "@/hooks/useFetchFn"
+import useFetchReducer from "@/hooks/useFetchReducer"
 import { useReducer, useRef } from "react"
-import { Cache, State } from "./interfaces"
-import useFetchFn from "./useFetchFn"
-import useFetchReducer from "./useFetchReducer"
 
 function useFetch<T = unknown>(url: string, options: RequestInit): State<T> {
     const cache = useRef<Cache<T>>({})

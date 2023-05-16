@@ -1,7 +1,7 @@
 "use client"
 
 import checkObject from "@/functions/checkObject"
-import { CartContext } from "@/items/cart/cartContext"
+import { CartContext } from "@/items/cart/context"
 import { i_CartItem } from "@/items/interfaces"
 import { useEffect, useState } from "react"
 

@@ -1,7 +1,7 @@
 "use client"
+import { CartContext } from "@/items/cart/context"
 import { useRouter } from "next/router"
 import { memo } from "react"
-import { CartContext } from "../../items/cart/cartContext"
 
 const ItemButtons = ({ ...props }) => {
     const { cartAdd } = CartContext()

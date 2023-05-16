@@ -1,7 +1,7 @@
 "use client"
 
+import { i_dbItem } from "@/items/interfaces"
 import { useRouter } from "next/router"
-import { i_dbItem } from "../../items/interfaces"
 
 export default function useItemsUserClicks() {
     const router = useRouter()

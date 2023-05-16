@@ -1,5 +1,5 @@
+import { i_data, i_photo } from "@/test/interfaces"
 import { MetadataRoute } from "next"
-import { i_data, i_photo } from "./test/interfaces"
 
 // TODO get this done with:
 // https://nextjs.org/learn/seo/crawling-and-indexing/xml-sitemaps

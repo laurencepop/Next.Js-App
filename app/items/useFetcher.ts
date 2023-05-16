@@ -1,8 +1,8 @@
 "use client"
+import baseURL from "@/functions/baseURL"
+import { UserContext } from "@/user/context"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
-import baseURL from "../functions/baseURL"
-import { UserContext } from "../user/userContext"
 
 export default function useFetcher() {
     const [loading, setLoading] = useState(false)

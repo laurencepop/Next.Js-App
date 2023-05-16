@@ -1,6 +1,6 @@
 "use client"
 
-import { Action, State } from "./interfaces"
+import { Action, State } from "@/hooks/interfaces"
 
 export default function useFetchReducer<T>(initialState: State<T>) {
     const reducer = (state: State<T>, action: Action<T>): State<T> => {

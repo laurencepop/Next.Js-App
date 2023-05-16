@@ -1,6 +1,6 @@
 "use client"
+import attributes from "@/user/signup/inputs.json"
 import { createElement, memo } from "react"
-import attributes from "./signUpInputs.json"
 
 const SignUpForm = ({ ...props }) => {
     const Inputs = attributes.map((val) =>

@@ -1,7 +1,7 @@
 "use client"
-import ItemsMap from "@/items/items/itemsMap"
-import ItemsSort from "@/items/items/itemsSort"
+import ItemsSort from "@/items/items/sort"
 import useItemsSearch from "@/items/items/useItemsSearch"
+import ItemsMap from "@/items/items/view"
 import { memo } from "react"
 
 const Items = () => {

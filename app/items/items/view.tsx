@@ -1,9 +1,9 @@
 "use client"
 
+import { i_dbItem } from "@/items/interfaces"
+import ItemsButtons from "@/items/items/buttons"
 import Image from "next/image"
 import { memo } from "react"
-import { i_dbItem } from "../../items/interfaces"
-import ItemsButtons from "./itemsButtons"
 
 const ItemsMap = ({ ...props }) => {
     const { items } = props

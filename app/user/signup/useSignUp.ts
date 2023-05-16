@@ -1,9 +1,9 @@
 "use client"
 
+import useValues from "@/hooks/useValues"
+import { i_SignUp } from "@/user/interfaces"
+import useFetcher from "@/user/useFetcher"
 import { useState } from "react"
-import useValues from "../../hooks/useValues"
-import { i_SignUp } from "../../user/interfaces"
-import useFetcher from "../useFetcher"
 
 export default function useSignUp() {
     const { transfer, error, loading, info } = useFetcher()
