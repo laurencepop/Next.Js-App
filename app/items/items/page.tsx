@@ -13,7 +13,7 @@ const Items = () => {
         <>
             <b className="r">Error</b>
             <br />
-            <p className="c f">{err.message}</p>
+            <p className="c">{err.message}</p>
         </>
     ) : items.length > 0 ? (
         <>

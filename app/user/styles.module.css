@@ -1,0 +1,14 @@
+.showPass {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    cursor: pointer;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 0 auto;
+}
+
+.showPass>div {
+    line-height: 2rem;
+    height: 2rem;
+}

@@ -18,7 +18,7 @@ const Edit = () => {
         <form className="l c" onSubmit={submit}>
             <b>Edit {values.name}</b>
             <ItemInputs {...{ values, setOnChange }} />
-            {error ? <p className="s c r">{error}</p> : null}
+            {error ? <p className="c r">{error}</p> : null}
             {loading ? (
                 <b className="c">wait...</b>
             ) : (

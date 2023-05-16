@@ -1,6 +1,13 @@
 export default function (ms: number) {
     return new Promise((resolve) => {
-        const timer = setTimeout(resolve, ms)
+        const timer = setTimeout(resolve, ms * 1000)
         return () => clearTimeout(timer)
     })
 }
+
+/*
+import delay from "@/functions/delay"
+
+await delay(8)
+return ()
+*/

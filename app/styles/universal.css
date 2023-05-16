@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./classes.css");
+@import url("./tags.css");
+@import url("./inputs.css");
+@import url("./buttons.css");
+@import url("./textarea.css");
+@import url("./select.css");
+@import url("./effects.css");
+@import url("./scrollbar.css");
+@import url("./flex.css");
+
+/* ---------------------------------- FONTS --------------------------------- */
+
+@font-face {
+    font-family: "Neucha";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Neucha"), url(../assets/fonts/Neucha.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Jetbrains";
+    font-style: normal;
+    font-weight: 400;
+    src: local("JetBrains Mono"),
+        url(../assets/fonts/Jetbrains.woff) format("woff");
+}
+
+/* --------------------------------- COLORS --------------------------------- */
+
+:root {
+    --bl: #22a;
+    --r: #a22;
+    --g: #2aa;
+    --y: #aa2;
+    --w: #aaa;
+}
+
+.b {
+    color: var(--b);
+}
+
+.y {
+    color: var(--y);
+}
+
+.r {
+    color: var(--r);
+}
+
+.g {
+    color: var(--g);
+}
+
+/* --------------------------------- LAYOUT --------------------------------- */
+
+@media (max-width: 1200px) {
+    html {
+        background-size: contain;
+    }
+
+    pre {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        background-size: 100% 100%;
+        /*background-image: url(../assets/images/bg_line.png);*/
+    }
+
+    pre {
+        font-size: 1.48rem;
+        line-height: 2.4rem;
+    }
+}
+
+html,
+body,
+form,
+select,
+option,
+input,
+textarea,
+a,
+p,
+.p,
+b {
+    font-family: var(--f);
+    font-size: 1.8rem;
+    font-variant: normal;
+    font-weight: 300;
+    text-shadow: none;
+    text-decoration: none;
+    text-align: justify;
+    word-wrap: break-word;
+    color: var(--w);
+}
+
+html {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 2.8rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background: var(--b);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    display: block;
+    width: 92%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

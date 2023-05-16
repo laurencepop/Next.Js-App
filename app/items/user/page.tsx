@@ -17,7 +17,7 @@ const ItemsUser = () => {
         <>
             <b className="r">Error</b>
             <br />
-            <p className="c f">{err.message}</p>
+            <p className="c">{err.message}</p>
         </>
     ) : isObject ? (
         <ItemsUserMap {...{ items }} />

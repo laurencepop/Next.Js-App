@@ -17,14 +17,14 @@ const SignIn = () => {
     return (
         <>
             <form className="l c" onSubmit={submit}>
-                {/* <b className="c f">{router ? router : "SignIn"}</b> */}
+                {/* <b className="c">{router ? router : "SignIn"}</b> */}
                 <SignInInputs {...{ values, setOnChange }} />
                 <br />
                 {loading ? (
                     <b className="c">wait...</b>
                 ) : (
                     <>
-                        {error ? <p className="s c r">{error}</p> : null}
+                        {error ? <p className="c r">{error}</p> : null}
                         <input type="submit" value="send" />
                     </>
                 )}

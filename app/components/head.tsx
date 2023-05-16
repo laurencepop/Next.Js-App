@@ -73,7 +73,7 @@ export default function () {
             />
             <link
                 rel="manifest"
-                href="%PUBLIC_URL%/manifest.json"
+                href="manifest.json"
                 crossOrigin="use-credentials"
             />
         </head>

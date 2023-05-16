@@ -4,7 +4,7 @@ import { NavContext } from "@/navigation/context"
 import { useCallback, useEffect } from "react"
 
 export default function () {
-    const { expandMenu, setSearchValue } = NavContext()
+    const { expandMenu } = NavContext()
 
     const mouse = useCallback(
         (e: MouseEvent) => {
@@ -15,11 +15,9 @@ export default function () {
             element.id !== "mainMenuButton" &&
                 !element.classList.contains("sectionButton") &&
                 expandMenu(false)
-
-            // on menu btn click: empty search input
-            element.classList.contains("menuButton") && setSearchValue("")
+            //TODO "sectionButton" only when implementing submenu (from archive)
         },
-        [expandMenu, setSearchValue]
+        [expandMenu]
     )
 
     useEffect(() => {

@@ -1,0 +1,36 @@
+.item {
+	display: block;
+	border-top: 0.08rem dotted var(--bn);
+	padding: 1.2rem;
+}
+
+.item:hover {
+	background: var(--bk);
+	cursor: pointer;
+}
+
+.item>p:nth-child(1) {
+	color: var(--g);
+	font-size: 2rem;
+}
+
+.img {
+	display: block;
+	border: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+@media (max-width: 1200px) {
+	.img {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.img {
+		width: 180px;
+		height: 180px;
+	}
+}

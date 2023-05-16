@@ -5,7 +5,8 @@ import NavContextProvider from "@/navigation/context"
 import Menu from "@/navigation/menu/menu"
 import Nav from "@/navigation/navbar/navbar"
 import UserContextProvider from "@/user/context"
-import "./styles/globals.css"
+import styles from "./styles/main.module.css"
+import "./styles/universal.css"
 
 export const metadata = {
     title: "Portfolio",
@@ -21,7 +22,7 @@ export default function ({ children }: { children: React.ReactNode }) {
                 <UserContextProvider>
                     <NavContextProvider>
                         <Nav />
-                        <main>
+                        <main className={styles.main}>
                             <div>
                                 <Menu />
                             </div>

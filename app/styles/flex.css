@@ -1,0 +1,11 @@
+.fx {
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.fc {
+    flex-grow: 1;
+    width: 50%;
+    margin: 0 0.2rem;
+}

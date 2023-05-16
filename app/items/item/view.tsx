@@ -4,6 +4,7 @@ import ItemButtons from "@/items/item/buttons"
 import { UserContext } from "@/user/context"
 import Image from "next/image"
 import { memo } from "react"
+import styles from "../styles.module.css"
 
 const ItemView = ({ ...props }) => {
     const { user } = UserContext()
@@ -18,7 +19,7 @@ const ItemView = ({ ...props }) => {
             <b className="y">{item.name}</b>
             <p className="c">{item.description}</p>
             <br />
-            <Image className="img" src={item.image} alt={item.name} />
+            <Image className={styles.img} src={item.image} alt={item.name} />
             <p className="c">${item.price},-</p>
             <br />
             <ItemButtons {...{ item, userItem }} />

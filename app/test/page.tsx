@@ -1,3 +1,4 @@
+import delay from "@/functions/delay"
 import { i_data } from "@/test/interfaces"
 import View from "@/test/view"
 
@@ -12,5 +13,6 @@ export default async function () {
     const response = await fetch(api, { next: { revalidate: 60 } })
     const data: i_data = await response.json()
 
+    await delay(4)
     return data.success ? <View {...data} /> : <p>no data</p>
 }

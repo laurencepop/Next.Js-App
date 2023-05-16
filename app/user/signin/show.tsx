@@ -1,13 +1,14 @@
 "use client"
 
 import { memo } from "react"
+import styles from "../styles.module.css"
 
 const SignInShow = ({ ...props }) => {
     const { show, setShow } = props
 
     return (
-        <label className="showPass" htmlFor="checkbox">
-            <div>Show password?</div>
+        <label className={styles.showPass} htmlFor="checkbox">
+            <div className={styles.showPassDiv}>Show password?</div>
             <div>
                 <input
                     id="checkbox"

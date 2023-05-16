@@ -1,0 +1,88 @@
+input {
+    display: block;
+    position: relative;
+    margin: 0.8rem 0;
+    width: 100%;
+    font-size: inherit;
+    line-height: 4.8rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: var(--b);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="date"] {
+    padding: 0 0 0 4rem;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    resize: none;
+    overflow: hidden;
+    background: var(--w);
+    animation-name: colorchange;
+    animation-duration: 2s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="text"]:required:focus,
+input[type="tel"]:required:focus,
+input[type="email"]:required:focus,
+input[type="search"]:required:focus,
+input[type="password"]:required:focus,
+input[type="date"]:required:focus {
+    outline: 0.4rem solid var(--r);
+    outline-offset: -0.28rem;
+}
+
+input[type="search"] {
+    background-position: left 0.6rem center;
+    background-position-x: 0.6rem;
+    background-image: url(../assets/images/src.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+input[type="text"]:required:invalid,
+input[type="tel"]:required:invalid,
+input[type="email"]:required:invalid,
+input[type="password"]:required:invalid,
+input[type="date"]:required:invalid {
+    background-position: left 0.6rem center;
+    background-position-x: 0.6rem;
+    background-image: url(../assets/images/inv.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+input[type="text"]:required:valid,
+input[type="tel"]:required:valid,
+input[type="email"]:required:valid,
+input[type="password"]:required:valid,
+input[type="date"]:required:valid {
+    background-position: left 0.6rem center;
+    background-position-x: 0.6rem;
+    background-image: url(../assets/images/vld.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+input[type="checkbox"]:before {
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+}

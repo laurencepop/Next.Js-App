@@ -9,7 +9,7 @@ const ButtonFont = () => {
     const toggleFont = () => (font === "J" ? setFont("N") : setFont("J"))
 
     useEffect(() => {
-        let size = wW > 1000 ? 10 : 6.8
+        let size = wW > 1200 ? 10 : 6.8
         document.documentElement.style.setProperty("font-size", `${size}px`)
 
         if (font.length === 0) setFont(localStorage.getItem("font") || "N")

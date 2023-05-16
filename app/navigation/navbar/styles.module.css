@@ -1,0 +1,49 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn 0.8s;
+    position: fixed;
+    z-index: 97;
+    width: 92%;
+    max-width: 98rem;
+    background: var(--b);
+    border-bottom: 0.02rem solid var(--bk);
+    -webkit-box-shadow: 0 2rem 2rem -2rem var(--bn);
+    box-shadow: 0 2rem 2rem -2rem var(--bk);
+}
+
+@media (min-width: 1200px) {
+    .nav > div:nth-child(1) {
+        display: none;
+    }
+}
+
+.nav > div:nth-child(1),
+.nav > div:nth-child(4),
+.nav > div:nth-child(5),
+.nav > div:nth-child(6) {
+    width: 10%;
+}
+
+.nav > div:nth-child(3),
+.nav > div:nth-child(4),
+.nav > div:nth-child(5),
+.nav > div:nth-child(6) {
+    margin: 0 0.2rem;
+}
+
+.nav > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0 0.8rem;
+    background-size: 100% 100%;
+    background-size: 48%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.nav > div:nth-child(3) {
+    width: 40%;
+}

@@ -1,3 +1,5 @@
+import "../styles/preloader.css"
+
 export default function () {
     return (
         <div id="preloader">

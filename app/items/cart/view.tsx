@@ -5,6 +5,7 @@ import { CartContext } from "@/items/cart/context"
 import { i_CartItem } from "@/items/interfaces"
 import Image from "next/image"
 import { memo } from "react"
+import styles from "../styles.module.css"
 
 const CartItems = ({ ...props }) => {
     const { cart, cartAdd, cartDel } = CartContext()
@@ -13,9 +14,13 @@ const CartItems = ({ ...props }) => {
     return isObject ? (
         <>
             {cart.map((item: i_CartItem) => (
-                <div className="item x c" key={item._id}>
+                <div className={styles.item} key={item._id}>
                     <h2>{item.name}</h2>
-                    <Image className="img" src={item.image} alt={item.name} />
+                    <Image
+                        className={styles.img}
+                        src={item.image}
+                        alt={item.name}
+                    />
                     <p className="c">
                         {`Item total: ${(
                             props.exchange *

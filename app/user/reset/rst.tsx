@@ -44,7 +44,7 @@ export default function Res() {
             <br />
             <p>Please try accessing it again in the next days or weeks!</p>
             {/*
-			<b className="h">Reset</b>
+			<b>Reset</b>
 			<div className="l c" ref={rD}>
 				<input
 					type={showPw ? "text" : "password"}
@@ -83,7 +83,7 @@ export default function Res() {
 					</div>
 				</label>
 				<br />
-				<p ref={ms} className="hide c r"></p>
+				<p ref={ms} className="c r"></p>
 				<input type="button" ref={iB} value="reset" onMouseUp={btn} />
 			</div>
 			*/}

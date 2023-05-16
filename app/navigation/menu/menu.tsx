@@ -4,19 +4,19 @@ import capsLock from "@/functions/capsLock"
 import mouseUpEvent from "@/functions/mouseUpEvent"
 import { NavContext } from "@/navigation/context"
 import MenuButtons from "@/navigation/menu/buttons"
-import { memo } from "react"
+import styles from "./styles.module.css"
 
 const Menu = () => {
     const { expand } = NavContext()
     mouseUpEvent()
     capsLock()
 
-    return (
-        <div id="menu" className={expand ? "show" : "hide"}>
+    return expand ? (
+        <div className={styles.menu}>
             <MenuButtons isMenu="mainMenu" />
             <MenuButtons isMenu="bottomMenu" />
         </div>
-    )
+    ) : null
 }
 
-export default memo(Menu)
+export default Menu

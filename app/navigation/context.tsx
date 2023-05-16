@@ -1,14 +1,20 @@
 "use client"
 
+import { useSizes } from "@/hooks/useSizes"
 import { i_NavContext } from "@/navigation/interfaces"
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useEffect, useState } from "react"
 
 const Context = createContext({} as i_NavContext)
 export const NavContext = () => useContext(Context)
 
 const NavContextProvider = ({ children }: { children: React.ReactNode }) => {
-    const [expand, expandMenu] = useState(false)
+    const [wW] = useSizes()
+    const [expand, expandMenu] = useState(true)
     const [searchValue, setSearchValue] = useState("") // navbar search input
+
+    useEffect(() => {
+        wW > 1200 ? expandMenu(true) : expandMenu(false)
+    }, [wW])
 
     const props: i_NavContext = {
         expand,

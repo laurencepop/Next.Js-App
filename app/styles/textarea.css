@@ -1,0 +1,33 @@
+textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    height: auto;
+    min-height: 4rem;
+    line-height: 2.8rem;
+    font-size: inherit;
+    color: var(--b);
+    background: var(--w);
+    animation-name: colorchange;
+    animation-duration: 2s;
+}
+
+textarea:focus,
+textarea:required:focus {
+    outline: 0.4rem solid var(--r);
+    outline-offset: -0.28rem;
+}
+
+/* textarea:required:valid {
+    outline: 0.4rem solid var(--g);
+} */

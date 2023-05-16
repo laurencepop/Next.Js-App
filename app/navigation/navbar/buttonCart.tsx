@@ -1,9 +1,11 @@
 "use client"
 import useCartCount from "@/items/cart/useCartCount"
+import { NavContext } from "@/navigation/context"
 import { useRouter } from "next/navigation"
 import { memo, useState } from "react"
 
 const ButtonCart = () => {
+    const { setSearchValue } = NavContext()
     const { cartCount } = useCartCount()
     const [color, setColor] = useState("")
     const router = useRouter()
@@ -11,6 +13,7 @@ const ButtonCart = () => {
     const cartLogo = `url(${require("../../assets/images/cart.png")})`
     const goToCart = () => {
         if (cartCount !== 0) {
+            setSearchValue("")
             router.push("/items/cart")
         } else null
     }
@@ -29,7 +32,6 @@ const ButtonCart = () => {
             onMouseEnter={() => setColor("#fff")}
             onMouseLeave={() => setColor("#2aa")}
             onMouseUp={goToCart}
-            className="menuButton"
         >
             {cartCount !== 0 ? cartCount : <p>Welcome!</p>}
         </div>

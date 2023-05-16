@@ -1,0 +1,96 @@
+/* -------------------------------- SCROLLBAR ------------------------------- */
+
+/* firefox */
+
+.menu {
+    scrollbar-color: var(--g) var(--b);
+    scrollbar-width: thin;
+}
+
+/* chrome & edge */
+
+.menu::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: var(--g);
+}
+
+.menu::-webkit-scrollbar-track {
+    background-color: var(--b);
+}
+
+.menu::-webkit-scrollbar-track-piece {
+    background-color: var(--b);
+}
+
+.menu::-webkit-scrollbar-button {
+    background-color: var(--b);
+}
+
+/* ---------------------------------- MENU ---------------------------------- */
+
+@media (max-width: 1200px) {
+    .menu {
+        top: 6.8rem;
+        z-index: 98;
+        padding: 0 2rem;
+        outline: 0.02rem solid var(--bk);
+        outline-offset: -0.02rem;
+        -webkit-box-shadow: 0.8rem 0.8rem 4rem var(--bk);
+        box-shadow: 0.8rem 0.8rem 4rem var(--bk);
+    }
+
+    .button,
+    .button:focus {
+        margin: 2.4rem 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu {
+        display: block;
+    }
+
+    .button,
+    .button:focus {
+        margin: 0.8rem 0;
+    }
+}
+
+.menu {
+    position: fixed;
+    width: auto;
+    height: fit-content;
+    max-height: calc(100vh - 14.8rem);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    animation: fadeIn 0.4s;
+    background: var(--b);
+}
+
+.button,
+.button:focus {
+    cursor: pointer;
+    color: var(--g);
+    animation: fadeIn 0.4s;
+}
+
+.button:hover {
+    color: var(--y);
+}
+
+/* --------------------------------- SUBMENU -------------------------------- */
+
+/*~ this are only when implementing "submenus" from archive ~*/
+
+.sectionButton.open::after {
+    content: "\21B4\00a0";
+    padding: 0 0.8rem;
+}
+
+.sMenu .p {
+    animation: fadeIn 0.8s;
+    padding: 0 2rem;
+}

@@ -32,7 +32,7 @@ export default function Recovery() {
             <br />
             <p>Please try accessing it again in the next days or weeks!</p>
             {/*
-			<b className="h">Recovery</b>
+			<b>Recovery</b>
 			<div className="l c" ref={rD}>
 				<input
 					type="email"
@@ -59,7 +59,7 @@ export default function Recovery() {
 					required
 				/>
 				<br />
-				<p ref={ms} className="hide c r"></p>
+				<p ref={ms} className="c r"></p>
 				<input type="button" ref={iB} value="check" onMouseUp={btn} />
 			</div>
 			*/}

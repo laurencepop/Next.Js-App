@@ -10,11 +10,11 @@ const SignUp = () => {
     const { values, setOnChange, submit, error, loading, info } = useSignUp()
 
     return info.length > 0 ? (
-        <h1 className="c y f">{info}</h1>
+        <h1 className="c y">{info}</h1>
     ) : (
         <>
             <SignUpForm {...{ values, setOnChange, submit, loading }} />
-            {error ? <p className="s c r">{error}</p> : null}
+            {error ? <p className="c r">{error}</p> : null}
         </>
     )
 }

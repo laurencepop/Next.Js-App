@@ -1,10 +1,12 @@
 "use client"
+import { NavContext } from "@/navigation/context"
 import { UserContext } from "@/user/context"
 import SignOut from "@/user/signOut"
 import { useRouter } from "next/navigation"
 import { memo, useCallback, useEffect } from "react"
 
 const ButtonSignInOut = () => {
+    const { setSearchValue } = NavContext()
     const router = useRouter()
     const { user } = UserContext()
 
@@ -16,6 +18,11 @@ const ButtonSignInOut = () => {
         return () => clearTimeout(timer)
     }, [signOutButton])
 
+    const doThis = () => {
+        setSearchValue("")
+        user ? signOutButton : router.push("/user/signin")
+    }
+
     return (
         <div>
             <input
@@ -23,9 +30,7 @@ const ButtonSignInOut = () => {
                 className="menuButton"
                 value={user ? "\u27B2" : "\u2687"}
                 title={user ? "signout" : "signin"}
-                onMouseUp={
-                    user ? signOutButton : () => router.push("/user/signin")
-                }
+                onMouseUp={doThis}
                 style={user ? { background: "#f00" } : undefined}
             />
         </div>

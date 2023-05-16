@@ -16,7 +16,7 @@ export default function View({ ...data }: i_data) {
                     href={`/test/${item.id}/${item.title}`}
                     target="_self"
                 >
-                    <div className="o cp h-80 p-4 hover:bg-sky-800">
+                    <div className="outline cp h-80 p-4 hover:bg-sky-800">
                         <p className="g">Title: {item.title}</p>
                         <p>User: {item.user}</p>
                     </div>

@@ -3,6 +3,7 @@ import { i_dbItem } from "@/items/interfaces"
 import useItemsUserClicks from "@/items/user/useItemsUserClicks"
 import Image from "next/image"
 import { memo } from "react"
+import styles from "../styles.module.css"
 
 const ItemsUserMap = ({ ...props }) => {
     const { addNew, edit } = useItemsUserClicks()
@@ -16,10 +17,14 @@ const ItemsUserMap = ({ ...props }) => {
         </div>
     ) : (
         props.items.map((item: i_dbItem) => (
-            <div className="item l c" key={item._id}>
+            <div className={styles.item} key={item._id}>
                 <h2 className="y c">{item.name}</h2>
                 <br />
-                <Image className="img" src={item.image} alt={item.name} />
+                <Image
+                    className={styles.img}
+                    src={item.image}
+                    alt={item.name}
+                />
                 <p className="c">${item.price},-</p>
                 <br />
                 <input

@@ -1,0 +1,42 @@
+button,
+button:active,
+button:visited,
+button:focus,
+input[type="submit"],
+input[type="submit"]:active,
+input[type="submit"]:visited,
+input[type="submit"]:focus,
+input[type="button"],
+input[type="button"]:active,
+input[type="button"]:visited,
+input[type="button"]:focus,
+input[type="file"],
+input[type="file"]:active,
+input[type="file"]:visited,
+input[type="file"]:focus {
+    display: block;
+    position: relative;
+    margin: 0.8rem 0;
+    width: 100%;
+    font-size: inherit;
+    line-height: 4.8rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 0;
+    text-align: center;
+    text-transform: lowercase;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    color: var(--b);
+    background: var(--g);
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="file"]:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
