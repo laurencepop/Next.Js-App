@@ -3,6 +3,7 @@ import View from "@/test/view"
 
 export const metadata = {
     title: "Album",
+    keywords: "React.js Next.js TypeScript",
     description: "collection of items",
 }
 

@@ -1,0 +1,25 @@
+{
+  "short_name": "Laurence",
+  "name": "Laurence",
+  "icons": [
+    {
+      "src": "https://create-react-app.dev/img/favicon/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://user-images.githubusercontent.com/121040484/229375981-ccbeb42a-5056-4c95-a279-78b21a8d955c.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://user-images.githubusercontent.com/121040484/229376572-7d2cbbe9-8a70-4b36-9b6d-e33f61f77f69.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#222",
+  "background_color": "#000"
+}

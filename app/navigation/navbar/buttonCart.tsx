@@ -8,7 +8,7 @@ const ButtonCart = () => {
     const [color, setColor] = useState("")
     const router = useRouter()
 
-    const cartLogo = `url(${require("../assets/images/cart.png")})`
+    const cartLogo = `url(${require("../../assets/images/cart.png")})`
     const goToCart = () => {
         if (cartCount !== 0) {
             router.push("/items/cart")
