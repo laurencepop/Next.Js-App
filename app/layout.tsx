@@ -3,8 +3,8 @@ import Menu from "@/navigation/menu"
 import NavContextProvider from "@/navigation/navContext"
 import Nav from "@/navigation/navbar"
 import UserContextProvider from "@/user/userContext"
-import Footer from "./components/footer"
-import "./globals.css"
+import Footer from "@/components/footer"
+import "./styles/globals.css"
 
 export const metadata = {
     title: "Portfolio",

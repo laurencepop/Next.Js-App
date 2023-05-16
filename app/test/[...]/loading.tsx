@@ -1,9 +1,7 @@
-export default function() {
-	return (
-		<div id="preloader">
-			<div id="loader">
-				<div id="circle"></div>
-			</div>
-		</div>
-	)
+"use client"
+
+import Preloader from "@/components/preloader"
+
+export default function () {
+    return <Preloader />
 }

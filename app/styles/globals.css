@@ -9,7 +9,7 @@
     font-family: "Neucha";
     font-style: normal;
     font-weight: 400;
-    src: local("Neucha"), url(./assets/fonts/Neucha.woff) format("woff");
+    src: local("Neucha"), url(../assets/fonts/Neucha.woff) format("woff");
     /* src: local('Neucha'), url(https://fonts.cdnfonts.com/s/5201/neucha.woff) format('woff') */
 }
 
@@ -18,7 +18,7 @@
     font-family: "Jetbrains";
     font-style: normal;
     font-weight: 400;
-    src: local("Share Tech"), url(./assets/fonts/Jetbrains.woff) format("woff");
+    src: local("Share Tech"), url(../assets/fonts/Jetbrains.woff) format("woff");
     /* src: local('JetBrains Mono'),
     url(https://fonts.cdnfonts.com/s/36131/JetbrainsMonoRegular-RpvmM.woff)
     format('woff'); */
@@ -343,7 +343,7 @@ html::-webkit-scrollbar-button,
 @media (min-width: 1200px) {
     html {
         background-size: 100% 100%;
-        /*background-image: url(./assets/images/bg_line.png);*/
+        /*background-image: url(../assets/images/bg_line.png);*/
     }
 
     pre {
@@ -590,7 +590,7 @@ input[type="date"]:required:focus {
 input[type="search"] {
     background-position: left 0.6rem center;
     background-position-x: 0.6rem;
-    background-image: url(./assets/images/src.png);
+    background-image: url(../assets/images/src.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
@@ -602,7 +602,7 @@ input[type="password"]:required:invalid,
 input[type="date"]:required:invalid {
     background-position: left 0.6rem center;
     background-position-x: 0.6rem;
-    background-image: url(./assets/images/inv.png);
+    background-image: url(../assets/images/inv.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
@@ -614,7 +614,7 @@ input[type="password"]:required:valid,
 input[type="date"]:required:valid {
     background-position: left 0.6rem center;
     background-position-x: 0.6rem;
-    background-image: url(./assets/images/vld.png);
+    background-image: url(../assets/images/vld.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
