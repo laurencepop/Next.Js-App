@@ -2,7 +2,7 @@
 
 import capsLock from "@/functions/capsLock"
 import mouseUpEvent from "@/functions/mouseUpEvent"
-import MenuButtons from "@/navigation/menuButtons"
+import MenuButtons from "@/navigation/menu/buttons"
 import { NavContext } from "@/navigation/navContext"
 import { memo } from "react"
 

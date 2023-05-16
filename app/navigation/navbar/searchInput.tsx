@@ -1,7 +1,7 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation"
 import { memo, useEffect, useState } from "react"
-import { NavContext } from "./navContext"
+import { NavContext } from "../navContext"
 
 const InputSearch = () => {
     const { searchValue, setSearchValue } = NavContext()

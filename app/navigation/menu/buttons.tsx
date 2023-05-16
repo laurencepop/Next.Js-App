@@ -2,8 +2,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { memo } from "react"
-import { i_MenuButton } from "./interfaces"
-import menuItems from "./menuItems"
+import { i_MenuButton } from "../interfaces"
+import menuItems from "./items"
 
 const MenuButtons = ({ isMenu }: { isMenu: string }) => {
     const pathname = usePathname()

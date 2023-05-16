@@ -1,8 +1,8 @@
 "use client"
 import { useRouter } from "next/navigation"
 import { memo, useCallback, useEffect } from "react"
-import SignOut from "../user/signOut"
-import { UserContext } from "../user/userContext"
+import SignOut from "../../user/signOut"
+import { UserContext } from "../../user/userContext"
 
 const ButtonSignInOut = () => {
     const router = useRouter()
