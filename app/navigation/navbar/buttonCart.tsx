@@ -1,6 +1,7 @@
 "use client"
 import useCartCount from "@/items/cart/useCartCount"
 import { NavContext } from "@/navigation/context"
+import baseURL from "@/utils/baseURL"
 import { useRouter } from "next/navigation"
 import { memo, useState } from "react"
 
@@ -10,7 +11,6 @@ const ButtonCart = () => {
     const [color, setColor] = useState("")
     const router = useRouter()
 
-    const cartLogo = `url(${require("../../assets/images/cart.png")})`
     const goToCart = () => {
         if (cartCount !== 0) {
             setSearchValue("")
@@ -25,7 +25,7 @@ const ButtonCart = () => {
                     ? { color: "#2aa" }
                     : {
                           color: `${color}`,
-                          backgroundImage: cartLogo,
+                          backgroundImage: `url('${baseURL}/images/cart.png')`,
                           cursor: "pointer",
                       }
             }
