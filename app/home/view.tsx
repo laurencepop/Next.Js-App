@@ -6,7 +6,7 @@ import useHomeSeach from "@/home/useHomeSearch"
 import Link from "next/link"
 import { memo } from "react"
 
-const HomeMap = () => {
+const View = () => {
     const { entries } = useHomeSeach()
 
     return (
@@ -23,4 +23,4 @@ const HomeMap = () => {
     )
 }
 
-export default memo(HomeMap)
+export default memo(View)

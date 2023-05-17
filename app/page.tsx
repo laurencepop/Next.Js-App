@@ -1,7 +1,7 @@
 "use client"
 
 import { GitHubLink } from "@/home/githubLink"
-import HomeMap from "@/home/view"
+import View from "@/home/view"
 import { UserContext } from "@/user/context"
 
 export default async function () {
@@ -13,7 +13,7 @@ export default async function () {
             <br />
             <GitHubLink />
             <br />
-            <HomeMap />
+            <View />
         </>
     )
 }
