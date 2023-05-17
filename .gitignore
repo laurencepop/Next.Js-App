@@ -38,6 +38,8 @@ src/**/*.map
 src/**/*.js
 *.rest
 .rest
+/test
+test/**/*
 
 # vercel
 .vercel
