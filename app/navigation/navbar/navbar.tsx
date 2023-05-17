@@ -6,8 +6,8 @@ import ButtonMenu from "@/navigation/navbar/buttonMenu"
 import ButtonSignInOut from "@/navigation/navbar/buttonSign"
 import ButtonTheme from "@/navigation/navbar/buttonTheme"
 import InputSearch from "@/navigation/navbar/searchInput"
+import styles from "@/navigation/navbar/styles.module.css"
 import { memo } from "react"
-import styles from "./styles.module.css"
 
 const Nav = () => {
     return (

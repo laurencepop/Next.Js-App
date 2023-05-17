@@ -13,11 +13,11 @@ export default async function Logger(error: any) {
         //~ schema:
         if (error.err.errors) {
             logError =
-                error.err.errors[ Object.keys(error.err.errors)[ 0 ] ].message
+                error.err.errors[Object.keys(error.err.errors)[0]].message
         }
         //~ joi:
         if (error.err.details) {
-            logError = error.err.details[ 0 ].message
+            logError = error.err.details[0].message
         }
     }
 
@@ -35,7 +35,7 @@ export default async function Logger(error: any) {
     console.log(chalk.bgRed(`Logger:\n${logError}\n`))
 
     await prependFile(
-        "../logs.txt",
+        "@/logs.txt",
         `\n${new Date().toLocaleString()}\n${logError}\n`
     )
     return logError

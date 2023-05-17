@@ -1,10 +1,10 @@
 "use client"
 
 import { i_Home } from "@/home/interfaces"
+import styles from "@/home/styles.module.css"
 import useHomeSeach from "@/home/useHomeSearch"
 import Link from "next/link"
 import { memo } from "react"
-import styles from "./styles.module.css"
 
 const HomeMap = () => {
     const { entries } = useHomeSeach()

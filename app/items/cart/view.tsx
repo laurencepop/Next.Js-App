@@ -2,10 +2,10 @@
 import CartItemButtons from "@/items/cart/buttons"
 import { CartContext } from "@/items/cart/context"
 import { i_CartItem } from "@/items/interfaces"
+import styles from "@/items/styles.module.css"
 import checkObject from "@/utils/checkObject"
 import Image from "next/image"
 import { memo } from "react"
-import styles from "../styles.module.css"
 
 const CartItems = ({ ...props }) => {
     const { cart, cartAdd, cartDel } = CartContext()

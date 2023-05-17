@@ -49,6 +49,7 @@
             "@/items/*": ["./app/items/*"],
             "@/nasa/*": ["./app/nasa/*"],
             "@/navigation/*": ["./app/navigation/*"],
+            "@/styles/*": ["./app/styles/*"],
             "@/test/*": ["./app/test/*"],
             "@/user/*": ["./app/user/*"],
             "@/utils/*": ["./app/utils/*"]

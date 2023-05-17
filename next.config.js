@@ -10,9 +10,6 @@ const nextConfig = {
             "api.slingacademy.com",
         ],
     },
-    experimental: {
-        serverActions: true,
-    },
 }
 
 module.exports = nextConfig

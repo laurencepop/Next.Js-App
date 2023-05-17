@@ -2,9 +2,9 @@
 
 import { i_dbItem } from "@/items/interfaces"
 import ItemsButtons from "@/items/items/buttons"
+import styles from "@/items/styles.module.css"
 import Image from "next/image"
 import { memo } from "react"
-import styles from "../styles.module.css"
 
 const ItemsMap = ({ ...props }) => {
     const { items } = props

@@ -2,9 +2,9 @@
 import { NavContext } from "@/navigation/context"
 import { i_MenuButton } from "@/navigation/interfaces"
 import menuItems from "@/navigation/menu/items"
+import styles from "@/navigation/menu/styles.module.css"
 import { usePathname, useRouter } from "next/navigation"
 import { memo } from "react"
-import styles from "./styles.module.css"
 
 const MenuButtons = ({ isMenu }: { isMenu: string }) => {
     const { setSearchValue } = NavContext()

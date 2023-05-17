@@ -2,9 +2,9 @@
 
 import { NavContext } from "@/navigation/context"
 import MenuButtons from "@/navigation/menu/buttons"
+import styles from "@/navigation/menu/styles.module.css"
 import capsLock from "@/utils/capsLock"
 import mouseUpEvent from "@/utils/mouseUpEvent"
-import styles from "./styles.module.css"
 
 const Menu = () => {
     const { expand } = NavContext()

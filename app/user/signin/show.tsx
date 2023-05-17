@@ -1,7 +1,7 @@
 "use client"
 
+import styles from "@/user/styles.module.css"
 import { memo } from "react"
-import styles from "../styles.module.css"
 
 const SignInShow = ({ ...props }) => {
     const { show, setShow } = props

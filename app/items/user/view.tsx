@@ -1,9 +1,9 @@
 "use client"
 import { i_dbItem } from "@/items/interfaces"
 import useItemsUserClicks from "@/items/user/useItemsUserClicks"
+import styles from "@/user/styles.module.css"
 import Image from "next/image"
 import { memo } from "react"
-import styles from "../styles.module.css"
 
 const ItemsUserMap = ({ ...props }) => {
     const { addNew, edit } = useItemsUserClicks()
