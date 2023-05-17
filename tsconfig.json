@@ -41,18 +41,18 @@
             }
         ],
         "paths": {
-            "@/*": ["./app/*"],
+            "@/*": ["./*"],
             "@/contact/*": ["./app/contact/*"],
-            "@/components/*": ["./app/components/*"],
+            "@/components/*": ["./components/*"],
             "@/home/*": ["./app/home/*"],
-            "@/hooks/*": ["./app/hooks/*"],
+            "@/hooks/*": ["./hooks/*"],
             "@/items/*": ["./app/items/*"],
             "@/nasa/*": ["./app/nasa/*"],
-            "@/navigation/*": ["./app/navigation/*"],
-            "@/styles/*": ["./app/styles/*"],
+            "@/navigation/*": ["./navigation/*"],
+            "@/styles/*": ["./styles/*"],
             "@/test/*": ["./app/test/*"],
             "@/user/*": ["./app/user/*"],
-            "@/utils/*": ["./app/utils/*"]
+            "@/utils/*": ["./utils/*"]
         }
     },
     "typeAcquisition": {
