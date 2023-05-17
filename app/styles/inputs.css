@@ -52,7 +52,7 @@ input[type="date"]:required:focus {
 input[type="search"] {
     background-position: left 0.6rem center;
     background-position-x: 0.6rem;
-    background-image: url(../assets/images/src.png);
+    background-image: url(/images/src.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
@@ -64,7 +64,7 @@ input[type="password"]:required:invalid,
 input[type="date"]:required:invalid {
     background-position: left 0.6rem center;
     background-position-x: 0.6rem;
-    background-image: url(../assets/images/inv.png);
+    background-image: url(/images/inv.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
@@ -76,7 +76,7 @@ input[type="password"]:required:valid,
 input[type="date"]:required:valid {
     background-position: left 0.6rem center;
     background-position-x: 0.6rem;
-    background-image: url(../assets/images/vld.png);
+    background-image: url(/images/vld.png);
     background-repeat: no-repeat;
     background-position-y: 50%;
 }

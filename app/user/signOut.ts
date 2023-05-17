@@ -1,6 +1,6 @@
 "use client"
-import baseURL from "@/functions/baseURL"
 import { UserContext } from "@/user/context"
+import baseURL from "@/utils/baseURL"
 
 export default function SignOut() {
     const { user, setUser } = UserContext()

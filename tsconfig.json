@@ -44,7 +44,6 @@
             "@/*": ["./app/*"],
             "@/contact/*": ["./app/contact/*"],
             "@/components/*": ["./app/components/*"],
-            "@/functions/*": ["./app/functions/*"],
             "@/home/*": ["./app/home/*"],
             "@/hooks/*": ["./app/hooks/*"],
             "@/items/*": ["./app/items/*"],

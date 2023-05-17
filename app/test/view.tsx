@@ -1,7 +1,7 @@
 "use client"
 
-import checkObject from "@/functions/checkObject"
 import { i_data, i_photo } from "@/test/interfaces"
+import checkObject from "@/utils/checkObject"
 import Link from "next/link"
 
 export default function View({ ...data }: i_data) {

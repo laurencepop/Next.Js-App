@@ -1,9 +1,9 @@
 "use client"
 
-import capsLock from "@/functions/capsLock"
-import mouseUpEvent from "@/functions/mouseUpEvent"
 import { NavContext } from "@/navigation/context"
 import MenuButtons from "@/navigation/menu/buttons"
+import capsLock from "@/utils/capsLock"
+import mouseUpEvent from "@/utils/mouseUpEvent"
 import styles from "./styles.module.css"
 
 const Menu = () => {

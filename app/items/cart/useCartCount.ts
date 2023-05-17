@@ -1,8 +1,8 @@
 "use client"
 
-import checkObject from "@/functions/checkObject"
 import { CartContext } from "@/items/cart/context"
 import { i_CartItem } from "@/items/interfaces"
+import checkObject from "@/utils/checkObject"
 import { useEffect, useState } from "react"
 
 export default function useCartCount() {

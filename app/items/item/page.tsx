@@ -1,9 +1,9 @@
 "use client"
-import baseURL from "@/functions/baseURL"
 import useFetch from "@/hooks/useFetch"
 import { options } from "@/hooks/useFetchOptionsGET"
 import { i_dbItem } from "@/items/interfaces"
 import ItemView from "@/items/item/view"
+import baseURL from "@/utils/baseURL"
 import { useParams } from "next/navigation"
 import { memo, useEffect, useState } from "react"
 

@@ -1,6 +1,5 @@
-// import Logger from "@/utils/logger"
 import sampleData from "@/home/items.json"
-// import type { NextApiRequest, NextApiResponse } from "next"
+// import Logger from "@/utils/logger"
 import { NextResponse, type NextRequest } from "next/server"
 import { v4 as uuidv4 } from "uuid"
 
@@ -8,13 +7,12 @@ import { v4 as uuidv4 } from "uuid"
 
 /* ---------------------------------- POST ---------------------------------- */
 
-// interface YYY {
-//     message: string | undefined
-// }
+interface YYY {
+    // message: string | undefined
+}
 
-// export async function POST(req: NextApiRequest, res: NextApiResponse<YYY>) {
-// export async function POST(req: NextRequest, res: NextResponse<YYY>) {
-export async function POST(req: NextRequest) {
+export async function POST(req: NextRequest, res: NextResponse<YYY>) {
+// export async function POST(req: NextRequest) {
     // const body: YYY = await req.json()
     const { name, description, path } = await req.json()
 
@@ -53,6 +51,7 @@ export async function GET(req: NextRequest) {
     //     res.status(400).json(await Logger({ err }))
     // }
 
+    //! IMPORTANT: best approach -> return new Response(
     return NextResponse.json(filteredItem)
     // return NextResponse.json({ xxxx })
     // return new Response(JSON.stringify({ message: param }), { status: 200 })

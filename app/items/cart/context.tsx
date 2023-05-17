@@ -1,7 +1,7 @@
 "use client"
-import checkObject from "@/functions/checkObject"
 import { reducer } from "@/items/cart/reducer"
 import { i_CartItem, i_ItemsContext } from "@/items/interfaces"
+import checkObject from "@/utils/checkObject"
 import {
     createContext,
     useContext,
