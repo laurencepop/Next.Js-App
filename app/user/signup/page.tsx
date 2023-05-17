@@ -1,6 +1,6 @@
 "use client"
 
-import SignUpForm from "@/user/signup/form"
+import SignUpForm from "@/app/user/signup/view"
 import useSignUp from "@/user/signup/useSignUp"
 import useUserCheck from "@/user/userCheck"
 import { memo } from "react"

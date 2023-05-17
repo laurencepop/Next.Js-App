@@ -32,7 +32,7 @@ export async function POST(req: NextRequest, res: NextResponse<YYY>) {
 
 /* --------------------------------- SEARCH --------------------------------- */
 
-//~ Request Url to this route: ...3000/test/api?query=abc&other=xxx
+//~ Request Url to this route: ...3000/test?query=abc&other=xxx
 export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url)
     const param1 = searchParams.get("query") || ""

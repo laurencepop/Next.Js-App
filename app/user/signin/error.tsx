@@ -1,21 +1,45 @@
 "use client"
+import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 
-export default function Error({
-    error,
-    reset,
-}: {
-    error: Error
-    reset: () => void
-}) {
+const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
+    const router = useRouter()
+    const errorLocation = document.location.pathname
+
     useEffect(() => {
-        console.log(`ERROR:\n${error}`)
+        console.log(
+            `## ERROR ##\nLocation: ${errorLocation}\nMessage:${error.message}`
+        )
     }, [error])
 
     return (
-        <div className="l c">
-            <h2>Something went wrong!</h2>
-            <button onClick={() => reset()}>Try again</button>
+        <div className="x c">
+            <b className="r">Error</b>
+            <br />
+            <br />
+            <p>Location: {errorLocation}</p>
+            <br />
+            <p>Message: {error.message}</p>
+            <br />
+            <br />
+            <div className="fx x">
+                <div className="fc">
+                    <input
+                        type="button"
+                        value="home"
+                        onMouseUp={() => router.replace("/")}
+                    />
+                </div>
+                <div className="fc">
+                    <input
+                        type="button"
+                        value="reset"
+                        onMouseUp={() => reset()}
+                    />
+                </div>
+            </div>
         </div>
     )
 }
+
+export default Error
