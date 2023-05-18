@@ -1,7 +1,11 @@
-"use client"
-
-import Preloader from "@/components/preloader"
+import "@/styles/preloader.css"
 
 export default function () {
-	return <Preloader />
+    return (
+        <div id="preloader">
+            <div id="loader">
+                <div id="circle"></div>
+            </div>
+        </div>
+    )
 }

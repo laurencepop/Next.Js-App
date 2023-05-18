@@ -1,5 +1,4 @@
-import Footer from "@/components/footer"
-import Head from "@/components/head"
+import Footer from "@/app/footer"
 import CartContextProvider from "@/items/cart/context"
 import NavContextProvider from "@/navigation/context"
 import Menu from "@/navigation/menu/menu"
@@ -7,6 +6,7 @@ import Nav from "@/navigation/navbar/navbar"
 import styles from "@/styles/main.module.css"
 import "@/styles/universal.css"
 import UserContextProvider from "@/user/context"
+import Head from "@/utils/head"
 
 export const metadata = {
     title: "Portfolio",
