@@ -1,3 +1,5 @@
+"use client"
+
 import "@/styles/preloader.css"
 
 export default function () {
