@@ -1,4 +1,4 @@
-import sampleData from "@/home/items.json"
+import sampleData from "@/home/data.json"
 // import Logger from "@/utils/logger"
 import { NextResponse, type NextRequest } from "next/server"
 import { v4 as uuidv4 } from "uuid"
@@ -7,12 +7,12 @@ import { v4 as uuidv4 } from "uuid"
 
 /* ---------------------------------- POST ---------------------------------- */
 
-interface YYY {
-    // message: string | undefined
-}
+// interface YYY {
+//     // message: string | undefined
+// }
 
-export async function POST(req: NextRequest, res: NextResponse<YYY>) {
-// export async function POST(req: NextRequest) {
+// export async function POST(req: NextRequest, res: NextResponse<YYY>) {
+export async function POST(req: NextRequest) {
     // const body: YYY = await req.json()
     const { name, description, path } = await req.json()
 
