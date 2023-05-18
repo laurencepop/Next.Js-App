@@ -1,4 +1,4 @@
-import View from "@/test/[...]/view"
+import Item from "@/app/test/[...]/item"
 import { i_item } from "@/test/interfaces"
 import { Metadata } from "next"
 
@@ -19,5 +19,5 @@ export default async function ({ params }: { params: string[] }) {
     const response = await fetch(itemUrl, { next: { revalidate: 60 } })
     const item: i_item = await response.json()
 
-    return item.success ? <View {...item.photo} /> : <p>no item</p>
+    return item.success ? <Item {...item.photo} /> : <p>no item</p>
 }

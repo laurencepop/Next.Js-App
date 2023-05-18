@@ -5,7 +5,7 @@ import styles from "@/user/styles.module.css"
 import Image from "next/image"
 import { memo } from "react"
 
-const ItemsUserMap = ({ ...props }) => {
+const Items = ({ ...props }) => {
     const { addNew, edit } = useItemsUserClicks()
 
     return props.items.length === 0 ? (
@@ -37,4 +37,4 @@ const ItemsUserMap = ({ ...props }) => {
     )
 }
 
-export default memo(ItemsUserMap)
+export default memo(Items)

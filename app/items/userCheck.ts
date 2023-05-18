@@ -8,9 +8,10 @@ import { useEffect } from "react"
 
 export default function useUserCheck() {
     const { user } = UserContext()
-    const isObject = checkObject<i_User | null>(user)
+    const isObject = checkObject<i_User>(user)
     const router = useRouter()
 
+    //FIXME
     // useEffect(() => {
     //     !isObject &&
     //         router.push({

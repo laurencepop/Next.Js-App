@@ -5,7 +5,7 @@ import checkObject from "@/utils/checkObject"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 
-export default function View({ ...photo }: i_photo) {
+export default function Item({ ...photo }: i_photo) {
     const router = useRouter()
     const isObject = checkObject<i_photo>(photo)
 

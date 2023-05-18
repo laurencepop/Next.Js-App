@@ -2,7 +2,7 @@
 // import React from "react"
 // import * as FcIcons from "react-icons/fc"
 
-const menuItems = [
+const items = [
     {
         menuName: "mainMenu",
         buttonName: "Home",
@@ -36,4 +36,4 @@ const menuItems = [
     },
 ]
 
-export default menuItems
+export default items

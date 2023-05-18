@@ -1,12 +1,12 @@
 "use client"
 import { NavContext } from "@/navigation/context"
 import { i_MenuButton } from "@/navigation/interfaces"
-import menuItems from "@/navigation/menu/items"
+import items from "@/navigation/menu/items"
 import styles from "@/navigation/menu/styles.module.css"
 import { usePathname, useRouter } from "next/navigation"
 import { memo } from "react"
 
-const MenuButtons = ({ isMenu }: { isMenu: string }) => {
+const Buttons = ({ isMenu }: { isMenu: string }) => {
     const { setSearchValue } = NavContext()
     const router = useRouter()
     const pathname = usePathname()
@@ -18,7 +18,7 @@ const MenuButtons = ({ isMenu }: { isMenu: string }) => {
 
     return (
         <>
-            {menuItems.map(
+            {items.map(
                 (item: i_MenuButton) =>
                     item.menuName === isMenu && (
                         <p
@@ -40,4 +40,4 @@ const MenuButtons = ({ isMenu }: { isMenu: string }) => {
     )
 }
 
-export default memo(MenuButtons)
+export default memo(Buttons)

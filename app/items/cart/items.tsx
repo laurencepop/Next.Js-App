@@ -7,7 +7,7 @@ import checkObject from "@/utils/checkObject"
 import Image from "next/image"
 import { memo } from "react"
 
-const CartItems = ({ ...props }) => {
+const Items = ({ ...props }) => {
     const { cart, cartAdd, cartDel } = CartContext()
     const isObject = checkObject<i_CartItem[]>(cart)
 
@@ -42,4 +42,4 @@ const CartItems = ({ ...props }) => {
         <b className="c">no data</b>
     )
 }
-export default memo(CartItems)
+export default memo(Items)

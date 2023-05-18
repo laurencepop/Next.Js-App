@@ -7,6 +7,7 @@ export default function useItemsSort() {
     const { wait, err, items } = useItems()
     const [itemsList, setItemsList] = useState<i_dbItem[]>([])
 
+    //FIXME is this useEffect check here really necessary? Check when done!!!
     useEffect(() => {
         items && setItemsList(items)
     }, [items])

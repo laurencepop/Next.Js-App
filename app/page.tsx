@@ -1,7 +1,5 @@
-"use client"
-
+import ItemsMap from "@/app/home/itemsMap"
 import { GitHubLink } from "@/home/githubLink"
-import View from "@/home/view"
 import { UserContext } from "@/user/context"
 
 export default async function () {
@@ -13,7 +11,7 @@ export default async function () {
             <br />
             <GitHubLink />
             <br />
-            <View />
+            <ItemsMap />
         </>
     )
 }

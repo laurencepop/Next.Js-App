@@ -8,7 +8,6 @@ import { useEffect, useState } from "react"
 export default function useCartCount() {
     const { cart } = CartContext()
     const [cartCount, setCartCount] = useState<number>(0)
-
     const isObject = checkObject<i_CartItem[]>(cart)
 
     useEffect(() => {

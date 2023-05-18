@@ -1,15 +1,15 @@
 "use client"
 
-import { i_data, i_photo } from "@/test/interfaces"
+import { i_items, i_photo } from "@/test/interfaces"
 import checkObject from "@/utils/checkObject"
 import Link from "next/link"
 
-export default function View({ ...data }: i_data) {
-    const isObject = checkObject<i_photo[]>(data.photos)
+export default function Items({ ...items }: i_items) {
+    const isObject = checkObject<i_photo[]>(items.photos)
 
     return isObject ? (
         <div className="grid gap-16 grid-cols-fluid">
-            {data.photos.map((item: i_photo) => (
+            {items.photos.map((item: i_photo) => (
                 <Link
                     key={item.id}
                     rel="preload"
@@ -24,6 +24,6 @@ export default function View({ ...data }: i_data) {
             ))}
         </div>
     ) : (
-        <b className="c">no data</b>
+        <b className="c">no items</b>
     )
 }

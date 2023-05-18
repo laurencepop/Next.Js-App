@@ -6,7 +6,7 @@ export interface i_photo {
     user: number
 }
 
-export interface i_data {
+export interface i_items {
     success: boolean
     message: string
     offset: number

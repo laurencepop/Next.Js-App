@@ -1,8 +1,8 @@
 "use client"
+import Items from "@/app/items/user/items"
 import { i_dbItem } from "@/items/interfaces"
 import useUserItems from "@/items/user/useItemsUser"
 import useItemsUserScroll from "@/items/user/useItemsUserScroll"
-import ItemsUserMap from "@/items/user/view"
 import checkObject from "@/utils/checkObject"
 import { memo } from "react"
 
@@ -12,7 +12,7 @@ const ItemsUser = () => {
     useItemsUserScroll()
 
     return wait ? (
-        <b className="c">wait@/items.</b>
+        <b className="c">wait...</b>
     ) : err ? (
         <>
             <b className="r">Error</b>
@@ -20,7 +20,7 @@ const ItemsUser = () => {
             <p className="c">{err.message}</p>
         </>
     ) : isObject ? (
-        <ItemsUserMap {...{ items }} />
+        <Items {...{ items }} />
     ) : (
         <b className="c">no data</b>
     )

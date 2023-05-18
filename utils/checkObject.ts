@@ -8,3 +8,5 @@ export default function <T>(data: T) {
         return false
     }
 }
+
+//* RETURNS A BOOLEAN!!!

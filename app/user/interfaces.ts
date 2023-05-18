@@ -7,8 +7,8 @@ export interface i_User {
 }
 
 export interface i_UserContext {
-    user: i_User | null
-    setUser: React.Dispatch<React.SetStateAction<i_User | null>>
+    user: i_User
+    setUser: React.Dispatch<React.SetStateAction<i_User>>
 }
 
 export interface i_SignIn {
