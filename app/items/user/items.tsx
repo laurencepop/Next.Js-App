@@ -11,7 +11,7 @@ const Items = ({ ...props }) => {
     return props.items.length === 0 ? (
         <div className="m c">
             <b className="c y">Info</b>
-            <p className="c">you don't have any items yet</p>
+            <p className="c">you do not have any items yet</p>
             <br />
             <input type="button" value="add" onMouseUp={addNew} />
         </div>

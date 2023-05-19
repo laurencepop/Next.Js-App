@@ -1,5 +1,6 @@
 "use client"
 
+import useObject from "@/hooks/useObject"
 import { i_User, i_UserContext } from "@/user/interfaces"
 import { createContext, useContext, useEffect, useState } from "react"
 
@@ -8,17 +9,15 @@ export const UserContext = () => useContext(Context)
 
 const UserContextProvider = ({ children }: { children: React.ReactNode }) => {
     const [user, setUser] = useState<i_User | null>(null)
+    const isObject = useObject<i_User | null>(user)
 
     useEffect(() => {
-        if (user) {
+        if (isObject) {
             localStorage.setItem("User", JSON.stringify(user))
         } else {
-            const usr = JSON.parse(String(localStorage.getItem("User" || null)))
-            usr && setUser(usr)
-
-            //FIXME deal here with all e, rd, etc server scenarios from old php?
+            setUser(JSON.parse(String(localStorage.getItem("User") || null)))
         }
-    }, [user])
+    }, [user, isObject])
 
     const props: i_UserContext = { user, setUser }
     return <Context.Provider value={props}>{children}</Context.Provider>

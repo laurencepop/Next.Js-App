@@ -1,11 +1,11 @@
-import * as dotenv from 'dotenv'
-dotenv.config()
+// import * as dotenv from 'dotenv'
+// dotenv.config()
 
-const SRV = process.env.SV || ''
+const SRV = process.env.SV || ""
 
 const OPT = {
     retryWrites: true,
-    w: 'majority',
+    w: "majority",
     autoIndex: true,
     maxPoolSize: 10,
     serverSelectionTimeoutMS: 30000,
@@ -16,7 +16,7 @@ const OPT = {
 }
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3001
-const HOST = process.env.HOST ? String(process.env.HOST) : '127.0.0.1'
+const HOST = process.env.HOST ? String(process.env.HOST) : "127.0.0.1"
 
 export const cfg = {
     port: PORT,

@@ -1,15 +1,15 @@
 "use client"
+import useObject from "@/hooks/useObject"
 import CartItemButtons from "@/items/cart/buttons"
 import { CartContext } from "@/items/cart/context"
 import { i_CartItem } from "@/items/interfaces"
 import styles from "@/items/styles.module.css"
-import checkObject from "@/utils/checkObject"
 import Image from "next/image"
 import { memo } from "react"
 
 const Items = ({ ...props }) => {
     const { cart, cartAdd, cartDel } = CartContext()
-    const isObject = checkObject<i_CartItem[]>(cart)
+    const isObject = useObject<i_CartItem[]>(cart)
 
     return isObject ? (
         <>

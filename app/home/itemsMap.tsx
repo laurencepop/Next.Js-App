@@ -3,13 +3,13 @@
 import useSeach from "@/app/home/useSearch"
 import { i_Home } from "@/home/interfaces"
 import styles from "@/home/styles.module.css"
-import checkObject from "@/utils/checkObject"
+import useObject from "@/hooks/useObject"
 import Link from "next/link"
 import { memo } from "react"
 
 const ItemsMap = () => {
     const { items } = useSeach()
-    const isObject = checkObject<i_Home[]>(items)
+    const isObject = useObject<i_Home[]>(items)
 
     return isObject ? (
         <>

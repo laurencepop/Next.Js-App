@@ -5,7 +5,7 @@
 // import checks from "./checks"
 // import preCheck from "./precheck"
 
-export default function Res() {
+export default function Page() {
     // const nvg = useNavigate()
     // const Pw = useRef<HTMLInputElement>(null!)
     // const Pw2 = useRef<HTMLInputElement>(null!)
@@ -33,8 +33,8 @@ export default function Res() {
             <b className="c y">Maintenance</b>
             <br />
             <p>
-                This section's backend is getting converted momentarily from PHP
-                with MySQL, to Node.js with Express and MongoDB
+                This backend is getting converted momentarily from PHP with
+                MySQL, to Node.js with Express and MongoDB
             </p>
             <br />
             <p>

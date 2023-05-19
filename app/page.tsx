@@ -1,8 +1,10 @@
+"use client"
+
 import ItemsMap from "@/app/home/itemsMap"
 import { GitHubLink } from "@/home/githubLink"
 import { UserContext } from "@/user/context"
 
-export default async function () {
+export default async function Page() {
     const { user } = UserContext()
 
     return (

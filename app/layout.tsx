@@ -1,4 +1,5 @@
-import Footer from "@/app/footer"
+import Footer from "@/components/footer"
+import Head from "@/components/head"
 import CartContextProvider from "@/items/cart/context"
 import NavContextProvider from "@/navigation/context"
 import Menu from "@/navigation/menu/menu"
@@ -6,7 +7,6 @@ import Nav from "@/navigation/navbar/navbar"
 import styles from "@/styles/main.module.css"
 import "@/styles/universal.css"
 import UserContextProvider from "@/user/context"
-import Head from "@/utils/head"
 
 export const metadata = {
     title: "Portfolio",
@@ -14,7 +14,7 @@ export const metadata = {
     description: "Next.js React.js TypeScript Tailwind",
 }
 
-export default function ({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <Head />

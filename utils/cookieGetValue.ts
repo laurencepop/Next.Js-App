@@ -1,4 +1,4 @@
-export default function (cookieName: string) {
+export default function cookieGetValue(cookieName: string) {
     const cookieValue = document.cookie.match(
         "(^|;)\\s*" + cookieName + "\\s*=\\s*([^;]+)"
     )

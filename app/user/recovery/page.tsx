@@ -5,7 +5,7 @@
 
 // import checks from "./checks"
 
-export default function Recovery() {
+export default function Page() {
     // const Em = useRef<HTMLInputElement>(null!)
     // const Em2 = useRef<HTMLInputElement>(null!)
     // const ms = useRef<HTMLParagraphElement>(null!)
@@ -21,8 +21,8 @@ export default function Recovery() {
             <b className="c y">Maintenance</b>
             <br />
             <p>
-                This section's backend is getting converted momentarily from PHP
-                with MySQL, to Node.js with Express and MongoDB
+                This backend is getting converted momentarily from PHP with
+                MySQL, to Node.js with Express and MongoDB
             </p>
             <br />
             <p>

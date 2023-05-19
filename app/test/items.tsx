@@ -1,7 +1,7 @@
 "use client"
 
+import checkObject from "@/hooks/useObject"
 import { i_items, i_photo } from "@/test/interfaces"
-import checkObject from "@/utils/checkObject"
 import Link from "next/link"
 
 export default function Items({ ...items }: i_items) {

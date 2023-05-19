@@ -12,7 +12,7 @@ export async function generateMetadata({
     return { title: decodeURIComponent(second) }
 }
 
-export default async function ({ params }: { params: string[] }) {
+export default async function Page({ params }: { params: string[] }) {
     const key = Object.values(params)[0]
     const id = key.slice(0, 1)
     const itemUrl = `${process.env.PHOTOS_API}/${id}`

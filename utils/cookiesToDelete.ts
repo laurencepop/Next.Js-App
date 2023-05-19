@@ -1,4 +1,4 @@
-export default function (cookieArray: string[]) {
+export default function cookiesToDelete(cookieArray: string[]) {
     document.cookie.split(";").forEach((cookie) => {
         const position = cookie.indexOf("=")
         const cookieName = position > -1 ? cookie.slice(0, position) : cookie

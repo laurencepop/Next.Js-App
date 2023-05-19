@@ -1,13 +1,7 @@
 "use client"
 
-import "@/styles/preloader.css"
+import Load from "@/components/load"
 
-export default function () {
-    return (
-        <div id="preloader">
-            <div id="loader">
-                <div id="circle"></div>
-            </div>
-        </div>
-    )
+export default function Loading() {
+    return <Load />
 }

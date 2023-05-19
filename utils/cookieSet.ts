@@ -1,4 +1,4 @@
-export default function (
+export default function cookieSet(
     cookieName: string,
     cookieValue: string | number | boolean,
     hoursValid: number

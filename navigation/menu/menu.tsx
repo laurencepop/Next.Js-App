@@ -1,15 +1,15 @@
 "use client"
 
+import useCapsLock from "@/hooks/useCapsLock"
+import useMouseUp from "@/hooks/useMouseUp"
 import { NavContext } from "@/navigation/context"
 import Buttons from "@/navigation/menu/buttons"
 import styles from "@/navigation/menu/styles.module.css"
-import capsLock from "@/utils/capsLock"
-import mouseUpEvent from "@/utils/mouseUpEvent"
 
 const Menu = () => {
     const { expand } = NavContext()
-    mouseUpEvent()
-    capsLock()
+    useMouseUp()
+    useCapsLock()
 
     return expand ? (
         <div className={styles.menu}>

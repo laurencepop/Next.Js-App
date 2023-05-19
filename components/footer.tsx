@@ -8,7 +8,7 @@ const styles = {
     textAlign: "center",
 } as React.CSSProperties
 
-export default function () {
+export default function Footer() {
     return (
         <footer>
             <p style={styles}>© 2023 portfolio page</p>

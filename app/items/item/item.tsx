@@ -11,7 +11,7 @@ const ItemView = ({ ...props }) => {
     const { item } = props || {}
 
     let userItem = false // show t edit button below, if t user is t item owner
-    if (user?._id === item?.userID) userItem = true
+    if (user?._id === item.userID) userItem = true
 
     return (
         <>

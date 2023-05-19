@@ -1,4 +1,4 @@
-export default function (
+export default function TextArea(
     tA: React.RefObject<HTMLTextAreaElement>,
     ms: React.RefObject<HTMLParagraphElement>
 ) {

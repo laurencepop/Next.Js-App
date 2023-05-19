@@ -1,19 +1,28 @@
 "use client"
+import useUserCheck from "@/hooks/useUserCheck"
 import useValues from "@/hooks/useValues"
 import useEditDelete from "@/items/edit/useEditDelete"
 import useEditSubmit from "@/items/edit/useEditSubmit"
 import { i_Item } from "@/items/interfaces"
 import useFetcher from "@/items/useFetcher"
-import useUserCheck from "@/items/userCheck"
-import { useRouter } from "next/router"
-import { useState } from "react"
+import { useRouter } from "next/router"; // navigation
+import { useEffect, useState } from "react"
 
 export default function useEdit() {
-    useUserCheck()
-    const xxx = useRouter().query
-    const { transfer, error, loading, info } = useFetcher()
+    const isUser = useUserCheck()
+    const router = useRouter()
+    // const router = useRouter().query
+    // console.log(`UUU: ${router}`)
+    //FIXME check all this!!!!
+    useEffect(() => {
+        !isUser &&
+            router.push({
+                pathname: "user/signin",
+                query: "please sign in",
+            })
+    }, [isUser, router])
 
-    console.log(`UUU: ${xxx}`)
+    const { transfer, error, loading, info } = useFetcher()
 
     const [values, setValues] = useState<i_Item>({
         name: "",

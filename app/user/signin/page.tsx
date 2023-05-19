@@ -1,18 +1,19 @@
 "use client"
 
-// import { useRouter } from "next/router"
+import useUserCheck from "@/hooks/useUserCheck"
 import SignInButtons from "@/user/signin/buttons"
 import SignInInputs from "@/user/signin/inputs"
 import useSignIn from "@/user/signin/useSignIn"
-import useUserCheck from "@/user/userCheck"
+import { useRouter } from "next/router"
 import { memo } from "react"
 
 const SignIn = () => {
     useUserCheck()
-    // const router = useRouter()
-    const { values, setOnChange, submit, error, loading } = useSignIn()
+    //FIXME check this 2 lines below:
+    const router = useRouter()
+    console.log(`XXX: ${JSON.stringify(router)}`)
 
-    // console.log(`XXX: ${JSON.stringify(router)}`)
+    const { values, setOnChange, submit, error, loading } = useSignIn()
 
     return (
         <>

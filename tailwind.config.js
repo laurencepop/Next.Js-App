@@ -1,18 +1,13 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: [
-        "./app/**/*.{js,ts,jsx,tsx,mdx}",
-        "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
-    theme: {
-        extend: {
-            fontFamily: {
-                montserrat: ["var(--font-montserrat)"],
-            },
-            gridTemplateColumns: {
-                fluid: "repeat(auto-fit,minmax(15rem,1fr))",
-            },
+export const content = [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+]
+export const theme = {
+    extend: {
+        gridTemplateColumns: {
+            fluid: "repeat(auto-fit,minmax(15rem,1fr))",
         },
     },
-    plugins: [],
 }
+export const plugins = []

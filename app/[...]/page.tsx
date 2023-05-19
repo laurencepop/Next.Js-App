@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from "next/navigation"
 import { useEffect } from "react"
 
-export default async function () {
+export default async function Page() {
     const router = useRouter()
     const pathname = usePathname()
     let path: string = decodeURIComponent(pathname)
@@ -11,8 +11,8 @@ export default async function () {
     const goHome = () => router.replace("/")
 
     useEffect(() => {
-        setTimeout(goHome, 8000)
-    }, [pathname])
+        setTimeout(() => router.replace("/"), 8000)
+    }, [pathname, router])
 
     return (
         <div className="c l r">
