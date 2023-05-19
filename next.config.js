@@ -10,6 +10,9 @@ const nextConfig = {
             "api.slingacademy.com",
         ],
     },
+    experimental: {
+        forceSwcTransforms: true,
+    },
 }
 
-module.exports = nextConfig
+export default nextConfig
