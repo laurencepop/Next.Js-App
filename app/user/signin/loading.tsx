@@ -1,7 +1,7 @@
 "use client"
 
-import Load from "@/components/load"
+import Preloader from "@/components/preloader/preloader"
 
 export default function Loading() {
-    return <Load />
+    return <Preloader />
 }

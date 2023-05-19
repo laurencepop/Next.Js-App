@@ -1,37 +1,39 @@
 .cursor:hover {
-	cursor: pointer;
-	opacity: 0.6;
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .mini {
-	max-width: 12rem;
+    max-width: 12rem;
 }
 
 .c {
-	text-align: center;
+    text-align: center;
 }
+
+.outline {
+    outline: 0.4rem solid var(--g);
+    outline-offset: -0.4rem;
+}
+
+/* -------------------------------------------------------------------------- */
 
 .m,
 .l,
 .x {
-	display: block;
-	position: relative;
-	margin: 0 auto;
+    display: block;
+    position: relative;
+    margin: 0 auto;
 }
 
 .m {
-	max-width: 28rem;
+    max-width: 28rem;
 }
 
 .l {
-	max-width: 40rem;
+    max-width: 40rem;
 }
 
 .x {
-	max-width: 60rem;
-}
-
-.outline {
-	outline: 0.4rem solid var(--g);
-	outline-offset: -0.4rem;
+    max-width: 60rem;
 }

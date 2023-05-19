@@ -15,11 +15,18 @@ textarea {
     height: auto;
     min-height: 4rem;
     line-height: 2.8rem;
-    font-size: inherit;
     color: var(--b);
     background: var(--w);
     animation-name: colorchange;
     animation-duration: 2s;
+    font-family: var(--f);
+    font-size: 1.8rem;
+    font-variant: normal;
+    font-weight: 300;
+    text-shadow: none;
+    text-decoration: none;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 textarea:focus,

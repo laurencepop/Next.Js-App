@@ -1,5 +1,3 @@
-/** @type {import('next').NextConfig} */
-
 const nextConfig = {
     images: {
         domains: [
@@ -12,6 +10,14 @@ const nextConfig = {
     },
     experimental: {
         forceSwcTransforms: true,
+        serverComponentsExternalPackages: ["mongoose"],
+    },
+    webpack(config) {
+        config.experiments = {
+            ...config.experiments,
+            topLevelAwait: true,
+        }
+        return config
     },
 }
 

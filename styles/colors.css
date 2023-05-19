@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bl: #22a;
+        --r: #a22;
+        --g: #2aa;
+        --y: #aa2;
+        --w: #aaa;
+    }
+}
+
+.b {
+    color: var(--b);
+}
+
+.y {
+    color: var(--y);
+}
+
+.r {
+    color: var(--r);
+}
+
+.g {
+    color: var(--g);
+}

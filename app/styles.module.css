@@ -1,0 +1,122 @@
+/* ---------------------------------- HTML ---------------------------------- */
+
+.html {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--f);
+    font-size: 1.8rem;
+    font-variant: normal;
+    font-weight: 300;
+    text-shadow: none;
+    text-decoration: none;
+    text-align: justify;
+    word-wrap: break-word;
+    color: var(--w);
+    line-height: 2.8rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background: var(--b);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 1200px) {
+    .html {
+        background-size: contain;
+    }
+}
+
+@media (min-width: 1200px) {
+    .html {
+        background-size: 100% 100%;
+        /*background-image: url(/images/bg_line.png);*/
+    }
+}
+
+/* -------------------------------- SCROLLBAR ------------------------------- */
+
+/* firefox */
+.html {
+    scrollbar-color: var(--g) var(--b);
+    scrollbar-width: thin;
+}
+
+/* chrome & edge */
+.html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+.html::-webkit-scrollbar-thumb {
+    background-color: var(--g);
+}
+
+.html::-webkit-scrollbar-track {
+    background-color: var(--b);
+}
+
+.html::-webkit-scrollbar-track-piece {
+    background-color: var(--b);
+}
+
+.html::-webkit-scrollbar-button {
+    background-color: var(--b);
+}
+
+/* ---------------------------------- BODY ---------------------------------- */
+
+.body {
+    font-family: var(--f);
+    font-size: 1.8rem;
+    font-variant: normal;
+    font-weight: 300;
+    text-shadow: none;
+    text-decoration: none;
+    text-align: justify;
+    word-wrap: break-word;
+    color: var(--w);
+}
+
+.body {
+    display: block;
+    width: 92%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+}
+
+/* ---------------------------------- MAIN ---------------------------------- */
+
+.main {
+    display: flex;
+    position: relative;
+    top: 10rem;
+    justify-content: space-between;
+    animation: fadeIn 0.8s;
+}
+
+@media (max-width: 1200px) {
+    .main > div:nth-child(1) {
+        width: 0;
+    }
+
+    .main > div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main > div:nth-child(1) {
+        width: 24rem;
+    }
+
+    .main > div:nth-child(2) {
+        width: calc(98% - 24rem);
+    }
+}

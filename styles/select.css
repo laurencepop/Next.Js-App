@@ -11,6 +11,14 @@ select {
     outline: 0;
     color: var(--b);
     background: var(--w);
+    font-family: var(--f);
+    font-size: 1.8rem;
+    font-variant: normal;
+    font-weight: 300;
+    text-shadow: none;
+    text-decoration: none;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 select:hover {
@@ -35,10 +43,11 @@ select:required:valid {
     box-shadow: none;
 }
 
+/* -------------------------------------------------------------------------- */
+
 option {
     margin: 0;
     padding: 1rem;
-    font-size: 2rem;
     border: none;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -46,4 +55,12 @@ option {
     outline: 0;
     color: var(--b);
     background: var(--g);
+    font-family: var(--f);
+    font-size: 1.8rem;
+    font-variant: normal;
+    font-weight: 300;
+    text-shadow: none;
+    text-decoration: none;
+    text-align: justify;
+    word-wrap: break-word;
 }
