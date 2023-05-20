@@ -4,22 +4,26 @@ import { useEffect } from "react"
 
 const Errors = ({ ...props }) => {
     const router = useRouter()
-    const { error, reset, location } = props
+    const { e_mess, e_stack, e_name, e_cause, reset, location } = props
 
     useEffect(() => {
         console.log(
-            `## ERROR ##\nLocation: ${location}\nMessage:${error.message}`
+            `#### ERROR ####\n> Location: ${location}\nMessage:${e_mess}`
         )
-    }, [error, location])
+    }, [e_mess, location])
 
     return (
         <div className="x c">
-            <b className="r">Error</b>
             <br />
+            {e_name && <b className="r">{e_name}</b>}
             <br />
             <p>Location: {location}</p>
             <br />
-            <p>Message: {error.message}</p>
+            {e_mess && <p className="y">Message: {e_mess}</p>}
+            <br />
+            {e_cause && <p>{e_cause}</p>}
+            <br />
+            {e_stack && <p>{e_stack}</p>}
             <br />
             <br />
             <div className="fx x">
