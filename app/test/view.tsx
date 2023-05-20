@@ -9,7 +9,7 @@ export default function Items({ ...items }: i_items) {
 
     return isObject ? (
         <div className="grid gap-16 grid-cols-fluid">
-            {items.photos.map((item: i_photo) => (
+            {items.photos.slice(0, 10).map((item: i_photo) => (
                 <Link
                     key={item.id}
                     rel="preload"

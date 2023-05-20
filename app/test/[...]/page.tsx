@@ -1,4 +1,4 @@
-import Item from "@/app/test/[...]/item"
+import Item from "@/app/test/[...]/view"
 import { i_item } from "@/test/interfaces"
 import { Metadata } from "next"
 
@@ -15,6 +15,7 @@ export async function generateMetadata({
 export default async function Page({ params }: { params: string[] }) {
     const key = Object.values(params)[0]
     const id = key.slice(0, 1)
+
     const itemUrl = `${process.env.PHOTOS_API}/${id}`
     const response = await fetch(itemUrl, { next: { revalidate: 60 } })
     const item: i_item = await response.json()

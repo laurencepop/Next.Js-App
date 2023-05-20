@@ -1,6 +1,6 @@
 "use client"
 
-import { NavContext } from "@/navigation/context"
+import { NavContext } from "@/components/navigation/context"
 import { useCallback, useEffect } from "react"
 
 export default function useMouseUp() {

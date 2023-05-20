@@ -1,5 +1,5 @@
 "use client"
-import { NavContext } from "@/navigation/context"
+import { NavContext } from "@/components/navigation/context"
 import { UserContext } from "@/user/context"
 import SignOut from "@/user/signOut"
 import { useRouter } from "next/navigation"

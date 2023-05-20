@@ -1,8 +1,8 @@
 "use client"
-import { NavContext } from "@/navigation/context"
-import { i_MenuButton } from "@/navigation/interfaces"
-import items from "@/navigation/menu/items"
-import styles from "@/navigation/menu/styles.module.css"
+import { NavContext } from "@/components/navigation/context"
+import { i_MenuButton } from "@/components/navigation/interfaces"
+import items from "@/components/navigation/menu/items"
+import styles from "@/components/navigation/menu/styles.module.css"
 import { usePathname, useRouter } from "next/navigation"
 import { memo } from "react"
 

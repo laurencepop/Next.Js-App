@@ -1,8 +1,8 @@
 "use client"
 
-import { i_Home } from "@/home/interfaces"
+import { NavContext } from "@/components/navigation/context"
 import data from "@/home/data.json"
-import { NavContext } from "@/navigation/context"
+import { i_Home } from "@/home/interfaces"
 import { useMemo } from "react"
 
 export default function useHomeSeach() {

@@ -1,8 +1,8 @@
 "use client"
 
+import { NavContext } from "@/components/navigation/context"
 import { i_dbItem } from "@/items/interfaces"
 import useItemsSort from "@/items/items/useItemsSort"
-import { NavContext } from "@/navigation/context"
 import { useEffect, useState } from "react"
 
 export default function useItemsSearch() {

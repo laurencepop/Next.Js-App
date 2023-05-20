@@ -1,5 +1,5 @@
 "use client"
-import { NavContext } from "@/navigation/context"
+import { NavContext } from "@/components/navigation/context"
 import { usePathname, useRouter } from "next/navigation"
 import { memo, useEffect, useState } from "react"
 

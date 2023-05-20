@@ -1,7 +1,7 @@
 "use client"
 
+import { i_NavContext } from "@/components/navigation/interfaces"
 import { useSizes } from "@/hooks/useSizes"
-import { i_NavContext } from "@/navigation/interfaces"
 import { createContext, useContext, useEffect, useState } from "react"
 
 const Context = createContext({} as i_NavContext)

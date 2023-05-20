@@ -1,4 +1,4 @@
-import Items from "@/app/test/items"
+import Items from "@/app/test/view"
 import { i_items } from "@/test/interfaces"
 
 export const metadata = {

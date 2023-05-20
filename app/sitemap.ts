@@ -2,8 +2,8 @@
 // import { MetadataRoute } from "next"
 
 // TODO get this done with:
-// https://nextjs.org/learn/seo/crawling-and-indexing/xml-sitemaps
-// https://www.npmjs.com/package/next-sitemap
+//~ https://nextjs.org/learn/seo/crawling-and-indexing/xml-sitemaps
+//~ https://www.npmjs.com/package/next-sitemap
 //FIXME change host with domain name
 
 // export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

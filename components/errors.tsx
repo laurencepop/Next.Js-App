@@ -17,7 +17,7 @@ const Errors = ({ ...props }) => {
             <br />
             {e_name && <b className="r">{e_name}</b>}
             <br />
-            <p>Location: {location}</p>
+            {location !== "/" && <p>Location: {location}</p>}
             <br />
             {e_mess && <p className="y">Message: {e_mess}</p>}
             <br />
@@ -26,22 +26,24 @@ const Errors = ({ ...props }) => {
             {e_stack && <p>{e_stack}</p>}
             <br />
             <br />
-            <div className="fx x">
-                <div className="fc">
-                    <input
-                        type="button"
-                        value="home"
-                        onMouseUp={() => router.replace("/")}
-                    />
+            {location !== "/" && (
+                <div className="fx x">
+                    <div className="fc">
+                        <input
+                            type="button"
+                            value="home"
+                            onMouseUp={() => router.replace("/")}
+                        />
+                    </div>
+                    <div className="fc">
+                        <input
+                            type="button"
+                            value="reset"
+                            onMouseUp={() => reset()}
+                        />
+                    </div>
                 </div>
-                <div className="fc">
-                    <input
-                        type="button"
-                        value="reset"
-                        onMouseUp={() => reset()}
-                    />
-                </div>
-            </div>
+            )}
         </div>
     )
 }

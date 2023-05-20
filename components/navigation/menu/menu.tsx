@@ -1,10 +1,10 @@
 "use client"
 
+import { NavContext } from "@/components/navigation/context"
+import Buttons from "@/components/navigation/menu/buttons"
+import styles from "@/components/navigation/menu/styles.module.css"
 import useCapsLock from "@/hooks/useCapsLock"
 import useMouseUp from "@/hooks/useMouseUp"
-import { NavContext } from "@/navigation/context"
-import Buttons from "@/navigation/menu/buttons"
-import styles from "@/navigation/menu/styles.module.css"
 
 const Menu = () => {
     const { expand } = NavContext()
