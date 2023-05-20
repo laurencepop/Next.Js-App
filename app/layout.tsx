@@ -1,5 +1,6 @@
 import styles from "@/app/styles.module.css"
 import Footer from "@/components/footer"
+import PageLoader from "@/components/loader/pageLoader"
 import NavContextProvider from "@/components/navigation/context"
 import Menu from "@/components/navigation/menu/menu"
 import Nav from "@/components/navigation/navbar/navbar"
@@ -16,6 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <html className={`${styles.html} ${fonts.variable}`} lang="en">
             <body className={styles.body}>
+                <PageLoader />
                 <UserContextProvider>
                     <NavContextProvider>
                         <Nav />

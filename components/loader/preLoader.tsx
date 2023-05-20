@@ -1,6 +1,6 @@
 "use client"
 
-import styles from "@/components/preloader/styles.module.css"
+import styles from "@/components/loader/styles.module.css"
 
 export default function Preloader() {
     return (

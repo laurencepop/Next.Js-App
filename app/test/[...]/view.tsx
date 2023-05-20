@@ -4,6 +4,7 @@ import checkObject from "@/hooks/useObject"
 import { i_photo } from "@/test/interfaces"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import styles from "@/styles/img.module.css"
 
 export default function Item({ ...photo }: i_photo) {
     const router = useRouter()
@@ -17,6 +18,7 @@ export default function Item({ ...photo }: i_photo) {
                 alt={photo.title}
                 width={500}
                 height={500}
+                className={styles.img}
                 priority
             />
             <br />

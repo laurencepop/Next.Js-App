@@ -71,6 +71,12 @@
 /* ---------------------------------- BODY ---------------------------------- */
 
 .body {
+    display: block;
+    width: 92%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
     font-family: var(--f);
     font-size: 1.8rem;
     font-variant: normal;
@@ -80,15 +86,6 @@
     text-align: justify;
     word-wrap: break-word;
     color: var(--w);
-}
-
-.body {
-    display: block;
-    width: 92%;
-    max-width: 98rem;
-    margin: 0 auto;
-    padding: 0;
-    background: transparent;
 }
 
 /* ---------------------------------- MAIN ---------------------------------- */

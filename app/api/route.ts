@@ -44,10 +44,11 @@ export async function GET(req: NextRequest) {
         return item.name.toLowerCase().includes(param1.toLowerCase())
     })
 
+    //~ maybe use "try & catch" with "NextRequest & NextResponse"
     // try {
-    //     res.status(200).json({ name: "Mark" })
+    //     return res.status(200).json({ name: "Mark" })
     // } catch (err) {
-    //     res.status(400).json(await Logger({ err }))
+    //     return res.status(400).json(await Logger({ err }))
     // }
 
     //! IMPORTANT: best approach -> return new Response(

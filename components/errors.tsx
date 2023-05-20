@@ -1,4 +1,5 @@
 "use client"
+
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 
@@ -26,7 +27,7 @@ const Errors = ({ ...props }) => {
             {e_stack && <p>{e_stack}</p>}
             <br />
             <br />
-            {location !== "/" && (
+            {location.toString() !== "/" && (
                 <div className="fx x">
                     <div className="fc">
                         <input
