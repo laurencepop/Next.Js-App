@@ -10,6 +10,7 @@ const fonts = localFont({
     ],
     variable: "--f",
     fallback: ["Helvetica", "ui-sans-serif"],
+    display: "swap",
 })
 
 export default fonts

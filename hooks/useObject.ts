@@ -1,5 +1,5 @@
 export default function useObject<T>(data: T) {
-    const objectTypeCheck = (data: any) =>
+    const objectTypeCheck = (data: T) =>
         typeof data === "object" && data !== null
 
     if (objectTypeCheck(data)) {
@@ -9,4 +9,4 @@ export default function useObject<T>(data: T) {
     }
 }
 
-//* RETURNS A BOOLEAN!!!
+//* RETURNS A BOOLEAN, IF USER EXISTS!!!

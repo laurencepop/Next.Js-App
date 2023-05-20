@@ -1,6 +1,6 @@
 "use client"
 
-import useUserCheck from "@/hooks/useUserCheck"
+import useRedirUser from "@/hooks/useRedirUser"
 import SignInButtons from "@/user/signin/buttons"
 import SignInInputs from "@/user/signin/inputs"
 import useSignIn from "@/user/signin/useSignIn"
@@ -8,7 +8,7 @@ import { useRouter } from "next/router"
 import { memo } from "react"
 
 const SignIn = () => {
-    useUserCheck()
+    useRedirUser() // redirs to home if user logged in
     //FIXME check this 2 lines below:
     const router = useRouter()
     console.log(`XXX: ${JSON.stringify(router)}`)

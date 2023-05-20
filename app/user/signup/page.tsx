@@ -1,12 +1,12 @@
 "use client"
 
 import SignUpForm from "@/app/user/signup/form"
-import useUserCheck from "@/hooks/useUserCheck"
+import useRedirUser from "@/hooks/useRedirUser"
 import useSignUp from "@/user/signup/useSignUp"
 import { memo } from "react"
 
 const SignUp = () => {
-    useUserCheck()
+    useRedirUser() // redirs to home if user logged in
     const { values, setOnChange, submit, error, loading, info } = useSignUp()
 
     return info.length > 0 ? (

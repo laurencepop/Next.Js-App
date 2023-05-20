@@ -22,6 +22,7 @@ export const GitHubLink = () => {
                 width={80}
                 height={80}
             ></Image>
+            <br />
             <p className="c g">App source code on GitHub</p>
         </div>
     )

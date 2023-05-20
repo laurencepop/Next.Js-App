@@ -24,6 +24,7 @@ const Items = ({ ...props }) => {
                     className={styles.img}
                     src={item.image}
                     alt={item.name}
+                    priority
                 />
                 <p className="c">${item.price},-</p>
                 <br />

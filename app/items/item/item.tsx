@@ -19,7 +19,12 @@ const ItemView = ({ ...props }) => {
             <b className="y">{item.name}</b>
             <p className="c">{item.description}</p>
             <br />
-            <Image className={styles.img} src={item.image} alt={item.name} />
+            <Image
+                className={styles.img}
+                src={item.image}
+                alt={item.name}
+                priority
+            />
             <p className="c">${item.price},-</p>
             <br />
             <ItemButtons {...{ item, userItem }} />

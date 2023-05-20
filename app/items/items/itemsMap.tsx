@@ -13,7 +13,12 @@ const ItemsMap = ({ ...props }) => {
         <div className={styles.item} key={item._id}>
             <h2 className="y c">{item.name}</h2>
             <br />
-            <Image className={styles.img} src={item.image} alt={item.name} />
+            <Image
+                className={styles.img}
+                src={item.image}
+                alt={item.name}
+                priority
+            />
             <p className="c">${item.price},-</p>
             <br />
             <ItemsButtons {...{ item }} />

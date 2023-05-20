@@ -12,7 +12,13 @@ export default function Item({ ...photo }: i_photo) {
     return isObject ? (
         <div className="x c" key={photo.id}>
             <b className="y c">{photo.title}</b>
-            <Image src={photo.url} alt={photo.title} width={500} height={500} />
+            <Image
+                src={photo.url}
+                alt={photo.title}
+                width={500}
+                height={500}
+                priority
+            />
             <br />
             <p>{photo.description}</p>
             <p className="g text-right">User {photo.user}</p>

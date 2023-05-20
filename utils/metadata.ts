@@ -5,7 +5,10 @@ import { Metadata } from "next"
 // https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
 
 export const data: Metadata = {
-    title: "Portfolio",
+    title: {
+        default: "MyDomainName",
+        template: "%s | MyDomainName",
+    },
     keywords: "React.js Next.js TypeScript",
     description: "Next.js React.js TypeScript Tailwind",
     alternates: {
@@ -122,8 +125,8 @@ export const data: Metadata = {
         title: "Next.js",
         description: "The React Framework for the Web",
         creator: "@nextjs",
-        siteId: "1467726470533754880",
-        creatorId: "1467726470533754880",
+        siteId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        creatorId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         images: {
             url: "https://user-images.githubusercontent.com/121040484/229376134-c8d369c1-0c48-4f98-85d3-a2d65a95ff54.png",
             alt: "Next.js Logo",
