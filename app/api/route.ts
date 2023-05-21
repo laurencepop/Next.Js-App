@@ -1,6 +1,7 @@
 import sampleData from "@/home/data.json"
 // import Logger from "@/utils/logger"
 import { NextResponse, type NextRequest } from "next/server"
+// NextApiRequest, NextApiResponse
 
 //? https://nextjs.org/docs/app/building-your-application/routing/middleware
 
@@ -14,6 +15,7 @@ import { NextResponse, type NextRequest } from "next/server"
 export async function POST(req: NextRequest) {
     // const body: YYY = await req.json()
     const { name, description, path } = await req.json()
+    // req.cookies req.body req.query
 
     const newItem = {
         // id: uuidv4(),//FIXME here generate w something else than uuid!

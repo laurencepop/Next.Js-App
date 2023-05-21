@@ -1,7 +1,6 @@
 "use client"
 import { NavContext } from "@/components/navigation/context"
 import useCartCount from "@/items/cart/useCartCount"
-import baseURL from "@/utils/baseURL"
 import { useRouter } from "next/navigation"
 import { memo, useState } from "react"
 
@@ -25,7 +24,7 @@ const ButtonCart = () => {
                     ? { color: "#2aa" }
                     : {
                           color: `${color}`,
-                          backgroundImage: `url('${baseURL}/images/cart.png')`,
+                          backgroundImage: `url('/images/cart.png')`,
                           cursor: "pointer",
                       }
             }
