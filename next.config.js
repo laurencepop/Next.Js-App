@@ -22,9 +22,9 @@ const nextConfig = {
     redirects: async () => {
         return [
             {
-                source: "/xxx",
+                source: "/oldPath",
                 destination: "/",
-                permanent: true,
+                permanent: true, // false -> Maintenance
             },
         ]
     },
