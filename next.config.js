@@ -11,6 +11,7 @@ const nextConfig = {
     experimental: {
         forceSwcTransforms: true,
         serverComponentsExternalPackages: ["mongoose"],
+        serverActions: true,
     },
     webpack(config) {
         config.experiments = {
